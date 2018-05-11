@@ -9,7 +9,16 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+
+//= require jquery-3.2.1.slim.min
+//= require bootstrap.bundle.min
+//= require owl.carousel.min
+//= require smooth-scroll.min
+//= require jquery-3.2.1.slim.min
+//= require jquery.magnific-popup.min
+//= require particles.min
+//= require particles-app
+//= require main
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .

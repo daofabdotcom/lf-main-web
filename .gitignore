@@ -21,3 +21,9 @@
 /yarn-error.log
 
 .byebug_history
+.idea/.generators
+.idea/.rakeTasks
+.idea/lf-main-web.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml

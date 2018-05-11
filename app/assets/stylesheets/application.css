@@ -10,6 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require themify-icons
+ *= require cryptocoins
+ *= require cryptocoins-colors
+ *= require bootstrap-reboot.min
+ *= require bootstrap-grid.min
+ *= require owl.carousel.min
+ *= require magnific-popup
+ *= require main-color1
+ *= require main-color1
  *= require_tree .
  *= require_self
  */
