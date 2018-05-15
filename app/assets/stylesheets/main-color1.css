@@ -1041,7 +1041,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: white;
   z-index: 9;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
