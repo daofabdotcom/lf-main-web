@@ -1614,8 +1614,8 @@ ul {
 .section__title {
   color: #444;
   line-height: 130%;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 28px;
   margin-bottom: 10px;
   text-align: center;
   position: relative;
@@ -1734,7 +1734,8 @@ ul {
     padding: 80px 0;
   }
   .section__title {
-    font-size: 38px;
+    font-size: 28px;
+      font-weight: 700;
   }
   .section--first {
     margin-top: 90px;
@@ -1784,7 +1785,7 @@ ul {
 }
 .service__title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #444;
   margin-top: 25px;
   letter-spacing: 0.2px;
