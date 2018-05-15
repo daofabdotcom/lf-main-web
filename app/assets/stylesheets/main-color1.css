@@ -708,16 +708,20 @@ body {
     text-align: right
 }
 
+.text-justify {
+    text-align: justify
+}
+
 .text-capitalize {
-    text-align: capitalize
+    text-transform: capitalize
 }
 
 .text-uppercase {
-    text-align: uppercase
+    text-transform: uppercase;
 }
 
 .text-lowercase {
-    text-align: lowercase
+    text-transform: lowercase
 }
 
 .text-overline {
@@ -1108,10 +1112,17 @@ ul {
 .header__nav li:last-child {
   margin-bottom: 0;
 }
+
+.bold-font{
+    font-weight: 700;
+    color: black;
+}
+
+
 .header__nav a {
   color: #fff;
   font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
   letter-spacing: 0.6px;
 }
 .header__nav--active {
@@ -1257,7 +1268,7 @@ ul {
     padding: 0;
   }
   .header__nav a {
-    color: #707070;
+    color:black;
   }
   .header__nav a:hover {
     color: #444;
@@ -1689,8 +1700,8 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(68,68,68,0.7);
-  z-index: 1;
+  background-color: #CCCCCC;
+  /*z-index: 1;*/
 }
 .section--border-top {
   border-top: 1px solid rgba(68,68,68,0.1);
