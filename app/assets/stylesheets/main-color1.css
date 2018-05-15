@@ -42,9 +42,9 @@ html {
 html,
 body {
   height: 100%;
+    font-family: 'Arial Bold', 'Arial';
 }
 body {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -1341,7 +1341,7 @@ ul {
   align-items: stretch;
 }
 .home__title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arial Bold', 'Arial';
   color: #444;
   line-height: 130%;
   font-weight: 500;
@@ -1612,7 +1612,6 @@ ul {
   padding: 50px 0;
 }
 .section__title {
-  font-family: 'Montserrat', sans-serif;
   color: #444;
   line-height: 130%;
   font-weight: 500;
@@ -1786,7 +1785,6 @@ ul {
 .service__title {
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
   color: #444;
   margin-top: 25px;
   letter-spacing: 0.2px;
@@ -1838,7 +1836,6 @@ ul {
   display: block;
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
   color: #444;
   letter-spacing: 0.6px;
   margin: 0;
@@ -1862,7 +1859,7 @@ ul {
   margin-bottom: 0;
 }
 .price__value {
-  font-family: 'Montserrat', sans-serif;
+  
   font-size: 42px;
   color: #fff;
   font-weight: 500;
@@ -2545,7 +2542,7 @@ ul {
 .article__content h4,
 .article__content h5,
 .article__content h6 {
-  font-family: 'Montserrat', sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #444;
   line-height: 130%;
   font-weight: 500;
@@ -2706,7 +2703,7 @@ ul {
 .article__nav a h6 {
   font-size: 16px;
   color: #444;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
   letter-spacing: 0.4px;
   margin: 0;
@@ -2830,7 +2827,7 @@ ul {
   z-index: 1;
 }
 .sidebar__title {
-  font-family: 'Montserrat', sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #444;
   font-weight: 500;
   font-size: 18px;
@@ -2913,7 +2910,7 @@ ul {
 }
 .get-started__title {
   color: #444;
-  font-family: 'Montserrat', sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
   font-size: 28px;
   margin-bottom: 15px;
@@ -2954,7 +2951,7 @@ ul {
 }
 .review__blockquote {
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #707070;
   margin: 0;
 }
@@ -3244,9 +3241,8 @@ ul {
 }
 .footer__title {
   color: #444;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 0.6px;
   margin-bottom: 20px;
 }
@@ -3297,7 +3293,7 @@ ul {
 }
 .footer__copyright small {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.2px;
 }
 .footer__copyright small a {
@@ -3333,6 +3329,8 @@ ul {
   }
   .footer__title {
     margin-top: 0;
+  font-weight: 700;
+
   }
   .footer__list {
     margin-bottom: 40px;
