@@ -80,31 +80,31 @@ $(document).ready(function () {
 	Partners slider
 	==============================*/
 	$('.partners__slider').owlCarousel({
-		mouseDrag: false,
-		dots: false,
+		mouseDrag: true,
+		dots: true,
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 5000,
 		smartSpeed: 500,
 		responsive : {
 			0 : {
-				items: 2,
+				items: 1,
 				margin: 20
 			},
 			576 : {
-				items: 3,
+				items: 1,
 				margin: 20
 			},
 			768 : {
-				items: 4,
+				items: 1,
 				margin: 20
 			},
 			992 : {
-				items: 5,
+				items: 1,
 				margin: 25
 			},
 			1200 : {
-				items: 6,
+				items: 1,
 				margin: 30
 			}
 		}
@@ -117,7 +117,7 @@ $(document).ready(function () {
 		mouseDrag: false,
 		dots: true,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 5000,
 		smartSpeed: 500,
 		margin: 0,
