@@ -19,15 +19,27 @@
 //= require particles.min
 //= require particles-app
 //= require main
+//= require map-custom
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-    $(".dropdown").hover(function(){
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if(dropdownMenu.is(":visible")){
-            dropdownMenu.parent().toggleClass("open");
-        }
+
+function myMap() {
+    var myCenter = new google.maps.LatLng(1.2967926,103.7845679);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 17};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+
+    var infowindow = new google.maps.InfoWindow({
+        content: "<span class='text-bold'>LegalFAB Private Limited</span><br>\n" +
+        "LegalFAB Private Limited <br>" +
+        "LaunchPad @ One North <br>" +
+        "71 Ayer Rajah Crescent<br>" +
+        "Level 2, Unit 15<br>" +
+        "Singapore 139951 "
     });
-});
+    infowindow.open(map,marker);
+}
