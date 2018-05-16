@@ -17,9 +17,6 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-144x144.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600%7CRoboto:400,400i,500,700" rel="stylesheet">
-
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js"></script>
@@ -40,18 +37,18 @@
     <ul class="header__nav">
       <li><a href="/" class="text-uppercase">Home</a></li>
       <li><a href="/about-us" class="text-uppercase">About Us</a></li>
-      <li><a href="/services" class="text-uppercase">Services</a></li>
+      <li class="dropdown header__dropdown">
+        <a class="dropdown-toggle text-uppercase" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i class="ti-angle-double-down"></i> </a>
+
+        <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
+          <li><a href="article.html">Contract Assembly & Management</a></li>
+          <li><a href="faq.html">Projects & Transaction Monitoring</a></li>
+        </ul>
+      </li>
       <li><a href="/press" class="text-uppercase">News</a></li>
       <li><a href="/request-demo" class="text-uppercase">Request Demo</a></li>
       <li><a href="/contact-us" class="text-uppercase">Contact</a></li>
-      <!--<li class="dropdown header__dropdown">
-        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
 
-        <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
-          <li><a href="article.html">Article</a></li>
-          <li><a href="faq.html">Help</a></li>
-        </ul>
-      </li>-->
     </ul>
     <!-- end navigation -->
 

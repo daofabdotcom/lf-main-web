@@ -4215,10 +4215,10 @@ ul {
     padding: 0;
   }
   .header__nav a {
-    color:black;
+    color:#0F1B54;
   }
   .header__nav a:hover {
-    color: #444;
+    color: grey;
   }
   .header__dropdown {
     display: inline-block;
@@ -4228,7 +4228,7 @@ ul {
     color: #444;
   }
   .header__dropdown-menu {
-    width: 160px;
+    width: 350px;
   }
   .header__dropdown-menu li {
     margin: 0 0 15px;
