@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get '/about-us', :to=> 'static_page#about'
   get '/request-demo', :to=> 'static_page#demo'
   get '/contract_assembly_management', :to => 'static_page#cam'
-
+  get '/project_transaction_monitoring', :to => 'static_page#ptm'
 end

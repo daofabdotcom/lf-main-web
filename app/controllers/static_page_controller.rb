@@ -19,4 +19,8 @@ class StaticPageController < ApplicationController
 
   end
 
+  def ptm
+
+  end
+
 end
