@@ -15,4 +15,8 @@ class StaticPageController < ApplicationController
 
   end
 
+  def cam
+
+  end
+
 end
