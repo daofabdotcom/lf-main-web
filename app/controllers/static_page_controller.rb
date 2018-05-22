@@ -23,4 +23,8 @@ class StaticPageController < ApplicationController
 
   end
 
+  def news
+
+  end
+
 end
