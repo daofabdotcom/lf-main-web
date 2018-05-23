@@ -19,7 +19,6 @@
 //= require particles.min
 //= require particles-app
 //= require main
-//= require map-custom
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
