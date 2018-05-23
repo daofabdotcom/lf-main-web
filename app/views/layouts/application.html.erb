@@ -18,8 +18,6 @@
 
     <!-- Fonts -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js"></script>
   </head>
 
   <body>
@@ -67,8 +65,7 @@
     <!-- end mob button -->
   </header>
   <!-- end header -->
-
-    <%= yield %>
+  a  <%= yield %>
 
 
   <!-- footer -->
@@ -161,6 +158,7 @@
 
   </footer>
   <!-- end footer -->
-
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js"></script>
   </body>
 </html>

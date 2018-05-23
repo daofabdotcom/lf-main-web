@@ -1342,11 +1342,11 @@ ul {
 .home {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
 }
 .home__content {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
@@ -1396,8 +1396,6 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -2;
-    background: url("/assets/home/u0.jpg") no-repeat;
 }
 @media (min-width: 576px) {
   .home__title {
@@ -1461,10 +1459,9 @@ ul {
     display: block;
   }
   .home--ellipse:before {
-    background: url("/assets/home/home-bg2.jpg") no-repeat center center/cover;
   }
   .home__content {
-    padding-top: 45px;
+    padding-top: 15px;
   }
   .home__title {
     font-size: 36px;
@@ -1477,7 +1474,7 @@ ul {
     right: -30vh;
   }
   .home__content {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 1900px) {
@@ -2156,7 +2153,6 @@ ul {
   -webkit-box-shadow: 0 16px 56px 0 rgba(0,0,0,0.1);
   box-shadow: 0 16px 56px 0 rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 480px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2173,6 +2169,7 @@ ul {
   font-weight: 500;
   letter-spacing: 0.4px;
   margin-bottom: 10px;
+padding-right: 10px;
 }
 .servers__item {
   flex: 0 0 50%;
