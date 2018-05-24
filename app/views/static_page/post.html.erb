@@ -23,8 +23,7 @@
           <!-- content -->
           <div class="col-12 col-md-12">
 
-            <% if @posts.to_a.length > 0
-              @posts.each do |post|
+            <% unless @post.nil?
             %>
                 <!-- post -->
                 <article class="post" id="post1">
@@ -33,24 +32,23 @@
                   </figure>
 
                   <header class="post__header">
-                    <span class="post__date"><%= Date.parse(post.data.published).strftime('%v') %></span>
-                    <h2 class="post__title"><%= post.data.title %></h2>
+                    <span class="post__date"><%= Date.parse(@post.data.published).strftime('%v') %></span>
+                    <h2 class="post__title"><%= @post.data.title %></h2>
                   </header>
 
                   <div class="post__content">
                     <div class="text-justify">
-                      <%= post.data.summary.html_safe %>
+                      <%= @post.data.body.html_safe %>
                     </div>
 
-                    <a href="/post/<%= post.data.slug %>" class="post__link m-10 float-r">read more</a>
                   </div>
                 </article>
                 <!-- end post -->
-              <% end
+              <%
                  else
                     %>
-                  <h3>No post yet.</h3>
-                 <% end %>
+              <h3>No post yet.</h3>
+              <% end %>
 
 
 

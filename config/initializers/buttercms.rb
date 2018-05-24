@@ -1,2 +1,2 @@
 require 'buttercms-ruby'
-ButterCMS::api_token = '9022511832c51000d8370ede8620a307ce5e83da'
+ButterCMS::api_token = '46daddcdf6c8a1a60c88432fb6bf1e960505a25e'
