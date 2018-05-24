@@ -27,4 +27,12 @@ class StaticPageController < ApplicationController
 
   end
 
+  def privacy
+
+  end
+
+  def tnc
+
+  end
+
 end

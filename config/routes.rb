@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get '/contract_assembly_management', :to => 'static_page#cam'
   get '/project_transaction_monitoring', :to => 'static_page#ptm'
   get '/press', :to => 'static_page#news'
+  get '/terms_and_conditions', :to => 'static_page#tnc'
+  get '/privacy_policy', :to => 'static_page#privacy'
 end
