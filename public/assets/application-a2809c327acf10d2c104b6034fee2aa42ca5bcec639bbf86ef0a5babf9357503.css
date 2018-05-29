@@ -10277,6 +10277,11 @@ h1 h2 h3 h4 h5 h6 {
 .blog-min-height {
     min-height: 24.5em;
 }
+
+
+.grey-text {
+    color: #5E5E5E
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

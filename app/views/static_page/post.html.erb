@@ -1,12 +1,14 @@
-
+<% unless @post.nil?
+%>
 <!-- page title -->
-<section class="section section--first section--bg" data-bg="/assets/section/section-bg.jpg">
+<section class="section section--first blog-color<%= rand(1...7) %>  p-t-30 p-b-30 text-center" data-bg="/assets/section/section-bg.jpg">
   <div class="container">
     <div class="row">
       <!-- section title -->
       <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <h2 class="section__title section__title--white">Keep Reading</h2>
-        <p class="section__text section__text--white section__text--head">Welcome to blog</p>
+        <h2 class="section__title section__title--white"><%= @post.data.title %></h2>
+        <p class="section__text section__text--white section__text--head grey-text bold-font"><%= "#{@post.data.author.first_name.titleize} #{@post.data.author.last_name.titleize} | #{Date.parse(@post.data.published).strftime('%v')}"  %></p>
+        <img src="/assets/news-article1.png" width="60%">
       </div>
       <!-- end section title -->
     </div>
@@ -22,34 +24,15 @@
         <div class="row">
           <!-- content -->
           <div class="col-12 col-md-12">
-
-            <% unless @post.nil?
-            %>
                 <!-- post -->
                 <article class="post" id="post1">
-                  <figure class="post__img">
-                    <img src="/assets/blog/blog1.jpg" alt="" style="width: 100%">
-                  </figure>
-
-                  <header class="post__header">
-                    <span class="post__date"><%= Date.parse(@post.data.published).strftime('%v') %></span>
-                    <h2 class="post__title"><%= @post.data.title %></h2>
-                  </header>
-
                   <div class="post__content">
                     <div class="text-justify">
                       <%= @post.data.body.html_safe %>
                     </div>
-
                   </div>
                 </article>
                 <!-- end post -->
-              <%
-                 else
-                    %>
-              <h3>No post yet.</h3>
-              <% end %>
-
 
 
             <!-- paginator -->
@@ -69,3 +52,8 @@
   </div>
 </div>
 <!-- end blog -->
+<%
+  else
+%>
+  <h3>No post yet.</h3>
+<% end %>
