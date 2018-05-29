@@ -9176,8 +9176,9 @@ padding-right: 10px;
     padding: 0 25px 25px;
   }
   .post__title {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 34px;
+      font-weight: 700;
   }
 }
 @media (min-width: 992px) {
@@ -10220,6 +10221,31 @@ h1 h2 h3 h4 h5 h6 {
 
 .border-top-full {
     border-top: 1px solid rgba(23, 22, 22, 0.1) !important;
+}
+
+
+.blog-color1 {
+    background-color: #AEDFDB;
+}
+.blog-color2 {
+    background-color: #9AC4C2;
+}
+.blog-color3 {
+    background-color: #F7CB00;
+}
+.blog-color4 {
+    background-color: #EEBEB8;
+}
+.blog-color5 {
+    background-color: #EEBEB8;
+}
+
+.blog-color6 {
+    background-color: #D2CFF4;
+}
+
+.blog-header-bg {
+    background-color: #D3DCF0;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

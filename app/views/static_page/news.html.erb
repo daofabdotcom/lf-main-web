@@ -1,12 +1,13 @@
 
 <!-- page title -->
-<section class="section section--first section--bg" data-bg="/assets/section/section-bg.jpg">
+<section class="section section--first blog-header-bg" data-bg="/assets/section/section-bg.jpg">
   <div class="container">
     <div class="row">
       <!-- section title -->
       <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <h2 class="section__title section__title--white">Keep Reading</h2>
-        <p class="section__text section__text--white section__text--head">Welcome to blog</p>
+        <h2 class="section__title section__title--white">FEATURED ARTICLE</h2>
+        <p class="section__text section__text--white section__text--head">Love Quotient & Empathy versus Moore's Law</p>
+        <img src="/assets/news-article1.png">
       </div>
       <!-- end section title -->
     </div>
@@ -21,15 +22,15 @@
       <div class="col-12 offset-lg-0 col-xl-10 offset-xl-1">
         <div class="row">
           <!-- content -->
-          <div class="col-12 col-md-12">
+          <div class="col-12 col-md-4  col-xl-4 col-sm-4 col-lg-4">
 
             <% if @posts.to_a.length > 0
               @posts.each do |post|
             %>
                 <!-- post -->
                 <article class="post" id="post1">
-                  <figure class="post__img">
-                    <img src="/assets/blog/blog1.jpg" alt="" style="width: 100%">
+                  <figure class="post__img blog-color1">
+
                   </figure>
 
                   <header class="post__header">
@@ -37,13 +38,13 @@
                     <h2 class="post__title"><%= post.data.title %></h2>
                   </header>
 
-                  <div class="post__content">
+                 <!-- <div class="post__content">
                     <div class="text-justify">
                       <%= post.data.summary.html_safe %>
                     </div>
 
                     <a href="/post/<%= post.data.slug %>" class="post__link m-10 float-r">read more</a>
-                  </div>
+                  </div>-->
                 </article>
                 <!-- end post -->
               <% end
