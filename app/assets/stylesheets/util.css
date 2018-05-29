@@ -2274,6 +2274,7 @@
 /*[ Display ]
 -----------------------------------------------------------
 */
+.vertical-baseline {vertical-align: baseline;}
 .dis-none {display: none;}
 .dis-block {display: block;}
 .dis-inline {display: inline;}
