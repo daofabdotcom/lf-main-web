@@ -2682,6 +2682,7 @@ textarea.input100 {
 .dis-block {display: block;}
 .dis-inline {display: inline;}
 .dis-inline-block {display: inline-block;}
+.dis-inline-flex {display: inline-flex;}
 .dis-flex {
 	display: -webkit-box;
 	display: -webkit-flex;
