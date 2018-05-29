@@ -22,30 +22,25 @@
       <div class="col-12 offset-lg-0 col-xl-10 offset-xl-1">
         <div class="row">
           <!-- content -->
-          <div class="col-12 col-md-4  col-xl-4 col-sm-4 col-lg-4">
+
 
             <% if @posts.to_a.length > 0
               @posts.each do |post|
             %>
+              <div class="col-4 col-md-4  col-xl-4 col-sm-4 col-lg-4">
                 <!-- post -->
-                <article class="post" id="post1">
-                  <figure class="post__img blog-color1">
+                <a href="/post/<%= post.data.slug %>">
+                  <article class="post blog-min-height" id="post1">
+                    <figure class="post__img blog-color<%=rand(1...7) %>">
 
-                  </figure>
-
-                  <header class="post__header">
-                    <span class="post__date"><%= Date.parse(post.data.published).strftime('%v') %></span>
-                    <h2 class="post__title"><%= post.data.title %></h2>
-                  </header>
-
-                 <!-- <div class="post__content">
-                    <div class="text-justify">
-                      <%= post.data.summary.html_safe %>
-                    </div>
-
-                    <a href="/post/<%= post.data.slug %>" class="post__link m-10 float-r">read more</a>
-                  </div>-->
-                </article>
+                    </figure>
+                    <header class="post__header">
+                      <span class="post__date"><%= Date.parse(post.data.published).strftime('%v') %></span>
+                      <h2 class="post__title"><%= post.data.title %></h2>
+                    </header>
+                  </article>
+                </a>
+              </div>
                 <!-- end post -->
               <% end
                  else
@@ -64,7 +59,7 @@
               <li class="paginator__item paginator__item--next"><a href="#"><i class="ti-arrow-right"></i></a></li>
             </ul>-->
             <!-- end paginator -->
-          </div>
+
           <!-- end content -->
         </div>
       </div>
