@@ -2,77 +2,87 @@
 <section class="section section--border-bottom p-t-1">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-12 col-md-12 col-xl-10 offset-xl-1 text-center">
+      <div class="col-12 col-lg-12 col-md-12 col-xl-10 text-center m-t-50">
         <!-- form -->
-        <h2 class="section__title text-uppercase">Contact Us</h2>
-        <table width="70%" align="center" class="m-t-20">
+        <h2 class="section__title text-uppercase offset-xl-2">Contact Us</h2>
+        <% if flash[:success] == true %>
+        <div class="success-msg col-8 offset-2" role="alert">
+          <%= flash[:message]%>
+        </div>
+        <% end %>
+        <table width="90%" align="center" class="m-t-60">
+          <form action="/contact" class="sign__form" method="post">
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td><input name="first_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="required">Surname / Last Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="Tan"></td>
+            <td><input name="last_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="Tan"></td>
           </tr>
           <tr>
-            <td class="vertical-baseline text-right"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td class="vertical-baseline text-right"><label class="dis-inline required">Company Name</label></td>
+            <td><input name="company_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="Pte Ltd"></td>
           </tr>
           <tr>
-            <td class="vertical-baseline"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td class="vertical-baseline text-right"><label class="dis-inline required">Phone / Contact number</label></td>
+            <td><input name="phone" type="text" class="form__input form__input_full col-10 offset-1" placeholder="+65"></td>
           </tr>
           <tr>
-            <td class="vertical-baseline"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td class="vertical-baseline text-right"><label class="dis-inline required">Email Address</label></td>
+            <td><input name="email" type="text" class="form__input form__input_full col-10 offset-1" placeholder="yourname@xyz.com"></td>
           </tr>
           <tr>
-            <td class="vertical-baseline"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td class="vertical-baseline text-right"><label class="dis-inline required">Preferred Mode of Contact</label></td>
+            <td>
+              <div class="offset-2 text-left">
+                <input type="radio" id="mode1" name="contact_mode" value="email" checked>
+                <label for="mode1">Email</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" id="mode2" name="contact_mode" value="phone">
+                <label for="mode2">Contact Number</label>
+              </div>
+            </td>
           </tr>
           <tr>
-            <td class="vertical-baseline"><label class="dis-inline required">First Name</label></td>
-            <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td class="vertical-baseline text-right p-t-10"><label class="dis-inline required">Nature of query</label></td>
+            <td class="p-t-10">
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature1" value="contract_assembly_management">
+                <label for="nature1">Contract Assembly Management</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature2" value="client_services"> <label for="nature2">Client Service Technology</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature3" value="contract_assembly_and_client"><label for="nature3"> Above both</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature4" value="technical_issues"><label for="nature4">Technical Issues</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature5" value="billing"><label for="nature5">Billing</label>
+              </div>
+              <div class="offset-2 text-left">
+                <input type="radio" name="nature" id="nature6" value="others"><label for="nature6">Others</label>
+              </div>
+
+
+            </td>
           </tr><tr>
-          <td class="vertical-baseline"><label class="dis-inline required">First Name</label></td>
-          <td><input type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
-        </tr>
+          <td class="vertical-baseline text-right"><label class="dis-inline required">Message</label></td>
+          <td><textarea name="message" type="text" class="form__input form__input_full col-10 offset-1 p-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></td>
+          </tr>
+            <tr class="text-center">
+              <td colspan="2" align="right">
+                <%= token_tag nil %>
+                <button class="btn" type="submit">Submit</button>
+              </td>
+            </tr>
 
-
+          </form>
         </table>
-        <form action="#" class="sign__form">
-          <a href="index.html"><img class="sign__logo" src="img/logo.png" alt=""></a>
-          <div class="col-12">
-            <div class="col-12 col-lg-4 col-md-4 col-xl-4" style="display: inline"><label class="required">Company Name</label></div>
-            <div class=" col-8 dis-inline-block text-right"><input type="text" class="form__input form__input_full col-10" placeholder="Pte Ltd"></div>
-          </div>
-          <div class="col-12">
-            <div class="col-12 col-lg-4 col-md-4 col-xl-4" style="display: inline"><label class="required">Phone / Contact number</label></div>
-            <div class=" col-8 dis-inline-block text-right"><input type="text" class="form__input form__input_full col-10" placeholder="+65"></div>
-          </div>
-          <div class="col-12">
-            <div class="col-4" style="display: inline"><label class="required">Email Address</label></div>
-            <div class=" col-8 dis-inline-block text-right"><input type="text" class="form__input form__input_full col-10" placeholder="yourname@xyz.com"></div>
-          </div>
-
-          <div class="col-12">
-            <div class="col-4" style="display: inline"><label class="required">Preferred Mode of Contact</label></div>
-            <div class=" col-8 dis-inline-block text-right"><input type="text" class="form__input form__input_full col-10" placeholder="Full Name"></div>
-          </div>
-
-          <div class="col-12">
-            <label class="col-4 dis-inline required">Nature of query</label>
-            <input type="text" class="form__input form__input_full col-8" placeholder="Full Name">
-          </div>
-
-          <div class="col-12">
-            <label class="col-4 dis-inline required">Message</label>
-            <div class=" col-8 dis-inline-block text-right"><textarea type="text" class="form__input form__input_full col-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></div>
-          </div>
-
-          <button class="btn" type="button">Submit</button>
-        </form>
-        <!-- end form -->
       </div>
     </div>
   </div>
@@ -112,6 +122,10 @@
   </div>
 </section>
 <!-- end get started -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN9oJ0xA5CsEEsEvry4LeRwjvML1_1OwY&libraries=places&callback=myMap"
         async defer></script>
 <script>
@@ -375,5 +389,9 @@
             "Singapore 139951 "
         });
         infowindow.open(map, marker);
+    }
+
+    function submitContactForm() {
+
     }
 </script>

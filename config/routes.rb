@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/post/:slug', :to => 'static_page#post'
   get '/terms_and_conditions', :to => 'static_page#tnc'
   get '/privacy_policy', :to => 'static_page#privacy'
+  post '/contact', :to => 'static_page#submit_contact'
+
 end

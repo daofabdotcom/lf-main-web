@@ -49,4 +49,17 @@ class StaticPageController < ApplicationController
 
   end
 
+  def submit_contact
+    Rails.logger.info "New contact page submission from website with params #{params}"
+    begin
+      send_mail = LfMailer.send_cust_query(params).deliver
+    rescue Exception => ex
+      Rails.logger.error "Error occurred while submitting contact form due to #{ex}"
+    end
+    flash[:success] = true
+    flash[:message] = "Thank you submitting your query! Our team will get back to you soon."
+
+    redirect_to '/contact-us'
+  end
+
 end

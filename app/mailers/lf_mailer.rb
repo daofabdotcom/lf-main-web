@@ -4,7 +4,7 @@ class LfMailer < ApplicationMailer
 
   def send_cust_query(params)
     @query_details = params
-    mail(:to=>"info@legalfab.com", :subject=>"New contact from Legalfab.com (Mainwebsite)")
+    mail(:to=>"agrawal.anu90@gmail.com", :subject=>"New contact from Legalfab.com (Mainwebsite)")
   end
 
 end
