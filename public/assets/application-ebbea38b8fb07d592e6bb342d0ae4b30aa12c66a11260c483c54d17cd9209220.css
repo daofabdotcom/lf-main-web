@@ -7906,12 +7906,15 @@ ul {
     justify-content: center;
     align-items: center;
   }
+  .header-color {
+      color: #002664 !important;
+  }
   .header__nav li {
     margin: 0 15px;
     padding: 0;
   }
   .header__nav a {
-    color:#0F1B54;
+    color:#002664;
   }
   .header__nav a:hover {
     color: grey;
