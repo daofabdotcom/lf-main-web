@@ -7949,7 +7949,7 @@ ul {
     margin-left: 25px;
   }
   .header__btns .btn:hover {
-    background-color: #444;
+    background-color: grey;
   }
   .header--active,
   .header--white {
