@@ -24,3 +24,8 @@
 //= require_tree .
 
 
+
+function openChat() {
+    tidioChatApi.open();
+}
+
