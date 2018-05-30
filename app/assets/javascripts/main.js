@@ -33,7 +33,7 @@ $(document).ready(function () {
 		smartSpeed: 500,
 		responsive : {
 			0 : {
-				items: 1,
+				items: 3,
 				margin: 20
 			},
 			576 : {
