@@ -37,7 +37,7 @@ $(document).ready(function () {
 				margin: 20
 			},
 			576 : {
-				items: 1,
+				items: 3,
 				margin: 20
 			},
 			768 : {
