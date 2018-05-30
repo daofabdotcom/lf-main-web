@@ -41,15 +41,15 @@ $(document).ready(function () {
 				margin: 20
 			},
 			768 : {
-				items: 1,
+				items: 3,
 				margin: 20
 			},
 			992 : {
-				items: 1,
+				items: 3,
 				margin: 25
 			},
 			1200 : {
-				items: 1,
+				items: 3,
 				margin: 30
 			}
 		}
