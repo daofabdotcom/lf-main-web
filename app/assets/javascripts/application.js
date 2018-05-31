@@ -24,27 +24,3 @@
 
 
 
-$('.button-subscribe').click(function (event){
-    event.preventDefault();
-    $.ajax({
-        url: '/subscribe',
-        data: {
-            email: $('#subscribe_email').val()
-        },
-        error: function () {
-            $('#info').html('<p>An error has occurred</p>');
-        },
-        success: function (data) {
-            var item = $('<div class="notification success"><span>Thanks for subscribing LegalFAB. :)</span></div>');
-            $("#toastem").append($(item));
-            $(item).animate({"right":"12px"}, "fast");
-            setInterval(function(){
-                $(item).animate({"right":"-400px"},function(){
-                    $(item).remove();
-                });
-            },4000);
-        },
-        type: 'POST'
-    });
-});
-$('.prettySocial').prettySocial();
