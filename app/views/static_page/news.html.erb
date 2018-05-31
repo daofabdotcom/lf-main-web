@@ -31,8 +31,8 @@
                 <!-- post -->
                 <a href="/post/<%= post.data.slug %>">
                   <article class="post blog-min-height" id="post1">
-                    <figure class="post__img blog-color<%=(index % 5)+1 %>">
-
+                    <figure class="post__img">
+                      <img src="<%= post.data.featured_image  %>">
                     </figure>
                     <header class="post__header">
                       <span class="post__date"><%= Date.parse(post.data.published).strftime('%v') %></span>

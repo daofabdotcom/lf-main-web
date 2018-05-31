@@ -8,7 +8,6 @@
       <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <h2 class="section__title section__title--white"><%= @post.data.title %></h2>
         <p class="section__text section__text--white section__text--head grey-text bold-font"><%= "#{@post.data.author.first_name.titleize} #{@post.data.author.last_name.titleize} | #{Date.parse(@post.data.published).strftime('%v')}"  %></p>
-        <img src="/assets/news-article1.png" width="60%">
       </div>
       <!-- end section title -->
     </div>
@@ -37,7 +36,7 @@
                 <!-- post -->
                 <article class="post" id="post1">
                   <div class="post__content">
-                    <div class="text-justify">
+                    <div class="text-justify p-30">
                       <%= @post.data.body.html_safe %>
                     </div>
                   </div>
@@ -55,15 +54,16 @@
             </ul>-->
             <!-- end paginator -->
 
-            <% unless @post.meta.next_post.nil?%>
+
             <div class="col-12"> <h2><i class="ti-book"></i><span class=""> Other News</span> </h2></div>
 <!--            Previous post-->
+          <% unless @post.meta.next_post.nil?%>
             <div class="col-6 col-md-6  col-xl-6 col-sm-6 col-lg-6 dis-inline-flex float-l">
               <!-- post -->
               <a href="/post/<%= @post.meta.next_post.slug %>">
                 <article class="post blog-min-height" id="nextpost">
                   <figure class="post__img blog-color4">
-
+                    <img src="<%= @post.meta.next_post.featured_image  %>">
                   </figure>
                   <header class="post__header">
                     <h2 class="post__title"><%= @post.meta.next_post.title %></h2>
@@ -80,7 +80,7 @@
                 <a href="/post/<%= @post.meta.previous_post.slug %>">
                   <article class="post blog-min-height" id="previouspost">
                     <figure class="post__img blog-color1">
-
+                      <img src="<%= @post.meta.previous_post.featured_image  %>">
                     </figure>
                     <header class="post__header">
                       <h2 class="post__title"><%= @post.meta.previous_post.title %></h2>
