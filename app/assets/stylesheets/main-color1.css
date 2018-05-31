@@ -1221,7 +1221,7 @@ ul {
   }
   .header__nav {
     padding: 110px 30px 0;
-    height: 80vh;
+    height: 65vh;
   }
   .header__btns {
     height: 20vh;
@@ -1346,11 +1346,11 @@ ul {
 .home {
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 65vh;
 }
 .home__content {
   display: flex;
-  height: 80vh;
+  height: 65vh;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
@@ -1360,7 +1360,7 @@ ul {
   color: #444;
   line-height: 130%;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 .home__text {
@@ -1371,7 +1371,7 @@ ul {
   margin-bottom: 30px;
 }
 .home__btn {
-  position: absolute;
+  position: relative;
   display: block;
   bottom: 20px;
   height: 30px;
@@ -1403,13 +1403,13 @@ ul {
 }
 @media (min-width: 576px) {
   .home__title {
-    font-size: 30px;
+    font-size: 22px;
       font-weight: 700;
   }
 }
 @media (min-width: 768px) {
   .home__title {
-    font-size: 36px;
+    font-size: 26px;
       font-weight: 700;
   }
   .home__text {
@@ -1468,7 +1468,7 @@ ul {
     padding-top: 15px;
   }
   .home__title {
-    font-size: 36px;
+    font-size: 26px;
       font-weight: 700;
   }
 }
@@ -1702,7 +1702,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #CCCCCC;
+  background-color: #f2f2f2;
   /*z-index: 1;*/
 }
 
@@ -1801,7 +1801,7 @@ ul {
   z-index: 1;
 }
 .service__title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #444;
   margin-top: 25px;
