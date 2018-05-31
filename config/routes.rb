@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   get '/terms_and_conditions', :to => 'static_page#tnc'
   get '/privacy_policy', :to => 'static_page#privacy'
   post '/contact', :to => 'static_page#submit_contact'
-
+  post '/subscribe', :to => 'static_page#do_subscribe'
 end

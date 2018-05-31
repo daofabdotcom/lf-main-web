@@ -20,7 +20,18 @@
 <div class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12 offset-lg-0 col-xl-10 offset-xl-1">
+      <div class="social-container col-1 col-xl-1 col-lg-1 col-sm-1">
+        <div class="links">
+          <a href="#" data-type="twitter" data-url="<%= request.original_url %>" data-description="<%= @post.data.summary %>" data-via="LegalFAB" class="prettySocial fa fa-twitter twitter-share"></a>
+
+          <a href="#" data-type="facebook" data-url="<%= request.original_url %>" data-title="<%= @post.data.title %>" data-description="<%= @post.data.summary %>" data-media="" class="prettySocial fa fa-facebook fb-share"></a>
+
+          <a href="#" data-type="googleplus" data-url="<%= request.original_url %>" data-description="<%= @post.data.summary %>" class="prettySocial fa fa-google-plus google-share"></a>
+
+          <a href="#" data-type="pinterest" data-url="<%= request.original_url %>" data-description="<%= @post.data.summary %>" data-media="" class="prettySocial fa fa-pinterest pinterest-share"></a>
+        </div>
+      </div>
+      <div class="col-12 offset-lg-0 col-xl-10">
         <div class="row">
           <!-- content -->
                 <!-- post -->

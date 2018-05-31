@@ -18,6 +18,7 @@
  *= require bootstrap-grid.min
  *= require owl.carousel.min
  *= require magnific-popup
+ *= require toastem
  *= require main-color1
  *= require main-color1
  *= require_tree .

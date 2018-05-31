@@ -62,4 +62,15 @@ class StaticPageController < ApplicationController
     redirect_to '/contact-us'
   end
 
+
+  def do_subscribe
+    Rails.logger.info "New subscriber from website with params #{params}"
+    begin
+      send_mail = LfMailer.new_subscriber(params['email']).deliver
+    rescue Exception => ex
+      Rails.logger.error "Error occurred while submitting contact form due to #{ex}"
+    end
+    render :json => {success: true}
+  end
+
 end

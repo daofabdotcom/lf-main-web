@@ -7,4 +7,9 @@ class LfMailer < ApplicationMailer
     mail(:to=>"info@legalfab.com", :subject=>"New contact from Legalfab.com (Mainwebsite)")
   end
 
+  def new_subscriber(email)
+    @email = email
+    mail(:to=>"info@legalfab.com, agrawal.anu90@gmail.com", :subject=>"New subscriber from Legalfab.com (Mainwebsite)")
+  end
+
 end

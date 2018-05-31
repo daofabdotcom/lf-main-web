@@ -15,9 +15,9 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-144x144.png">
-
     <!-- Fonts -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
   </head>
 
   <body>
@@ -128,12 +128,12 @@
             </ul>
           </div>
 
-          <div class="col-4 col-sm-4 col-md-3">
+          <div class="col-4 col-sm-4 col-md-3" id="subscribe_block">
             <h6 class="footer__title">CONTACT</h6>
             <ul class="footer__list">
               <li><a href="tel:+6566527986">T: +65 6652 7986</a></li>
               <li><a href="mailto:info@legalfab.com">E: info@legalfab.com</a></li>
-              <li><input placeholder="Enter email" class="form__input form__input_small" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
+              <li><input placeholder="Enter email" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
             </ul>
             <ul class="footer__social">
               <li><a href="https://www.facebook.com/legalfabdotcom" target="_blank"><i class="ti-facebook"></i></a></li>
@@ -155,8 +155,8 @@
       </div>
 
     </section>
-
   </footer>
+  <div id="toastem"></div>
   <!-- end footer -->
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <script src="//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js"></script>

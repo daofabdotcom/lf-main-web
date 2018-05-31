@@ -9,17 +9,42 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-
-//= require jquery-3.2.1.slim.min
+//= require jquery-3.3.1.min
 //= require bootstrap.bundle.min
 //= require owl.carousel.min
 //= require smooth-scroll.min
-//= require jquery-3.2.1.slim.min
 //= require jquery.magnific-popup.min
 //= require particles.min
 //= require particles-app
+//= require toastem
+//= require jquery.prettySocial
 //= require main
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
 
+
+
+$('.button-subscribe').click(function (event){
+    event.preventDefault();
+    $.ajax({
+        url: '/subscribe',
+        data: {
+            email: $('#subscribe_email').val()
+        },
+        error: function () {
+            $('#info').html('<p>An error has occurred</p>');
+        },
+        success: function (data) {
+            var item = $('<div class="notification success"><span>Thanks for subscribing LegalFAB. :)</span></div>');
+            $("#toastem").append($(item));
+            $(item).animate({"right":"12px"}, "fast");
+            setInterval(function(){
+                $(item).animate({"right":"-400px"},function(){
+                    $(item).remove();
+                });
+            },4000);
+        },
+        type: 'POST'
+    });
+});
+$('.prettySocial').prettySocial();
