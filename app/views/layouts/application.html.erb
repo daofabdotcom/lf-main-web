@@ -134,6 +134,8 @@
               <li><a href="tel:+6566527986">T: +65 6652 7986</a></li>
               <li><a href="mailto:info@legalfab.com">E: info@legalfab.com</a></li>
               <li><input placeholder="Enter email" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
+              <li class="hidden loading" id="sending">Subscribing ...</li>
+              <li class="hidden green-text" id="subscribing-msg">Thank you for subscribing to our mailing list.</li>
             </ul>
             <ul class="footer__social">
               <li><a href="https://www.facebook.com/legalfabdotcom" target="_blank"><i class="ti-facebook"></i></a></li>
@@ -176,23 +178,27 @@
 
       $('.button-subscribe').click(function (event) {
           event.preventDefault();
+          $('#sending').removeClass('hidden');
           $.ajax({
               url: '/subscribe',
               data: {
                   email: $('#subscribe_email').val()
               },
               error: function () {
-                  $('#info').html('<p>An error has occurred</p>');
+                  $('#subscribing-msg').addClass('hidden');
+                  $('#sending').addClass('hidden');
               },
               success: function (data) {
-                  var item = $('<div class="notification success"><span>Thanks for subscribing LegalFAB. :)</span></div>');
+                  /*var item = $('<div class="notification success"><span>Thanks for subscribing LegalFAB. :)</span></div>');
                   $("#toastem").append($(item));
                   $(item).animate({"right": "12px"}, "fast");
                   setInterval(function () {
                       $(item).animate({"right": "-400px"}, function () {
                           $(item).remove();
                       });
-                  }, 4000);
+                  }, 4000);*/
+                  $('#sending').addClass('hidden');
+                  $('#subscribing-msg').removeClass('hidden');
               },
               type: 'POST'
           });
