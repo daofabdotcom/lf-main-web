@@ -2275,6 +2275,7 @@
 -----------------------------------------------------------
 */
 .vertical-baseline {vertical-align: baseline;}
+.vertical-top {vertical-align: top;}
 .dis-none {display: none;}
 .dis-block {display: block;}
 .dis-inline {display: inline;}
