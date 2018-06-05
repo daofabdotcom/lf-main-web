@@ -17,10 +17,7 @@
 //= require particles.min
 //= require particles-app
 //= require toastem
-//= require jquery.prettySocial
 //= require main
+//= require jquery.prettySocial
 //= require rails-ujs
 //= require turbolinks
-
-
-
