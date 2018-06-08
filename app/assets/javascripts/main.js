@@ -206,5 +206,9 @@ $( document ).on('turbolinks:load', function() {
         $(thisAlert).removeClass('alert-validate');
     }
 
-
+    var tidioScript = document.createElement('script');
+    tidioScript.src = '//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js';
+    document.body.appendChild(tidioScript);
+    tidioChatApi.display(true);
+    $('.prettySocial').prettySocial();
 })(jQuery);
