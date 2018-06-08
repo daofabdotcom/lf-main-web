@@ -21,3 +21,4 @@
 //= require jquery.prettySocial
 //= require rails-ujs
 //= require turbolinks
+//= require_tree .
