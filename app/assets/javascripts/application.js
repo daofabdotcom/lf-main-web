@@ -11,11 +11,8 @@
 // about supported directives.
 //= require jquery-3.3.1.min
 //= require bootstrap.bundle.min
-//= require owl.carousel.min
 //= require smooth-scroll.min
 //= require jquery.magnific-popup.min
-//= require particles.min
-//= require particles-app
 //= require toastem
 //= require main
 //= require jquery.prettySocial

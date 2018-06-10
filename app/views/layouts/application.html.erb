@@ -18,6 +18,7 @@
     <!-- Fonts -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <%= javascript_include_tag 'application', "data-turbolinks-track" => "reload" %>
   </head>
 
   <body>
@@ -26,7 +27,7 @@
     <!-- logo -->
     <div class="header__logo">
       <a href="/">
-        <img src="/assets/logo.jpg" width="50%" alt="">
+        <img src="/assets/logo.jpg" width="65%" alt="">
       </a>
     </div>
     <!-- end logo -->
@@ -39,8 +40,8 @@
         <a class="dropdown-toggle text-uppercase" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i class="ti-angle-double-down"></i> </a>
 
         <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
-          <li><a href="/contract_assembly_management">Contract Assembly & Management</a></li>
-          <li><a href="/project_transaction_monitoring">Projects & Transaction Monitoring</a></li>
+          <li><a href="/contract_assembly_management">CONTRACT ASSEMBLY & MANAGEMNT</a></li>
+          <li><a href="/project_transaction_monitoring">PROJECT & TRANSACTION MONITORING</a></li>
         </ul>
       </li>
       <li><a href="/press" class="text-uppercase">News</a></li>
@@ -77,10 +78,10 @@
             <!-- logo -->
             <div class="footer__logo">
               <a href="/">
-                <img src="/assets/LF-Symbol.png" width="50%" alt="">
+                <img src="/assets/LF-Symbol.png" width="40%" alt="">
               </a>
-              <p class="p-t-10 f-14 f-w-700 m-b-5">CHANGING THE WAY</p>
-              <p class="f-14 f-w-700">BUSINESSES TRANSACT</p>
+              <!--<p class="p-t-10 f-14 f-w-700 m-b-5">CHANGING THE WAY</p>
+              <p class="f-14 f-w-700">BUSINESSES TRANSACT</p>-->
             </div>
             <!-- end logo -->
           </div>
@@ -88,34 +89,20 @@
           <div class="col-4 col-sm-4 col-md-3 col-lg-2">
             <h6 class="footer__title">RESOURCES</h6>
             <ul class="footer__list">
-              <li><a href="/project_transaction_monitoring">Project & Transaction Monitoring
-
-              </a></li>
-              <li><a href="/contract_assembly_management">Contract Assembly
-
-              </a></li>
+              <li><a href="/project_transaction_monitoring">Project & Transaction Monitoring</a></li>
+              <li><a href="/contract_assembly_management">Contract Assembly & Management</a></li>
               <li><a href="/press">News</a></li>
-              <li><a href="/about-us">About Us
-
-              </a></li>
+              <li><a href="/about-us">About Us</a></li>
             </ul>
           </div>
 
           <div class="col-4 col-sm-4 col-md-3 col-lg-2">
             <h6 class="footer__title">SUPPORT</h6>
             <ul class="footer__list">
-              <li><a href="/request-demo">Request Demo
-
-              </a></li>
-              <li><a href="/contact-us">Contact Us
-
-              </a></li>
-              <li><a href="/terms_and_conditions">Terms of Service
-
-              </a></li>
-              <li><a href="/privacy_policy">Privacy Policy
-
-              </a></li>
+              <li><a href="/request-demo">Request Demo</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
+              <li><a href="/terms_and_conditions">Terms of Service</a></li>
+              <li><a href="/privacy_policy">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -133,15 +120,17 @@
             <ul class="footer__list">
               <li><a href="tel:+6566527986">T: +65 6652 7986</a></li>
               <li><a href="mailto:info@legalfab.com">E: info@legalfab.com</a></li>
-              <li><input placeholder="Enter email" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
+              <li>
+                <ul class="footer__social">
+                  <li id=""><a href="https://www.facebook.com/legalfabdotcom" target="_blank"><i class="ti-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/legalfab/" target="_blank"><i class="ti-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/legalfabdotcom/" target="_blank"><i class="ti-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/legalfabdotcom" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                </ul>
+              </li>
+              <li><input placeholder="Email Address" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
               <li class="hidden loading" id="sending">Subscribing ...</li>
               <li class="hidden green-text" id="subscribing-msg">Thank you for subscribing to our mailing list.</li>
-            </ul>
-            <ul class="footer__social">
-              <li><a href="https://www.facebook.com/legalfabdotcom" target="_blank"><i class="ti-facebook"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/legalfab/" target="_blank"><i class="ti-linkedin"></i></a></li>
-              <li><a href="https://www.instagram.com/legalfabdotcom/" target="_blank"><i class="ti-instagram"></i></a></li>
-              <li><a href="https://twitter.com/legalfabdotcom" target="_blank"><i class="ti-twitter-alt"></i></a></li>
             </ul>
           </div>
         </div>
@@ -159,23 +148,15 @@
     </section>
   </footer>
   <div id="toastem"></div>
-  <!-- end footer -->
-  <%= javascript_include_tag 'application', "data-turbolinks-track" => "reload" %>
-  <script src="//code.tidio.co/9orfbm4aywifrkscsmpex1dazyw6d7p8.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <%= javascript_include_tag "#@controller.#@action" %>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885084-1"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
-
       function gtag() {
           dataLayer.push(arguments);
       }
-
       gtag('js', new Date());
-
       gtag('config', 'UA-119885084-1');
-
-
       $('.button-subscribe').click(function (event) {
           event.preventDefault();
           $('#sending').removeClass('hidden');
