@@ -2578,26 +2578,26 @@ padding-right: 10px;
   margin-bottom: 10px;
 }
 .article__content h1 {
-  font-size: 30px;
+  font-size: 38px;
 }
 .article__content h2 {
-  font-size: 26px;
-}
-.article__content h3 {
   font-size: 22px;
 }
-.article__content h4 {
+.article__content h3 {
   font-size: 20px;
 }
-.article__content h5 {
+.article__content h4 {
   font-size: 18px;
 }
-.article__content h6 {
+.article__content h5 {
   font-size: 16px;
+}
+.article__content h6 {
+  font-size: 14px;
 }
 .article__content p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.4px;
   font-weight: 400;
@@ -3360,7 +3360,7 @@ padding-right: 10px;
 }
 .footer__copyright small {
   color: #757575;
-  font-size: 12px;
+  font-size: 8px;
   letter-spacing: 0.2px;
 }
 .footer__copyright small a {
