@@ -4,13 +4,15 @@
   <div class="container">
     <div class="row">
       <!-- section title -->
+      <% unless @featured_article.nil?%>
       <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <a href="/post/love-quotient-empathy-versus-moores-law">
-          <h2 class="section__title section__title--white">FEATURED ARTICLE</h2>
-          <p class="section__text section__text--white section__text--head grey-text">Love Quotient & Empathy versus Moore's Law</p>
-          <img src="/assets/news-article1.png" width="60%">
+        <a href="/post/<%= @featured_article.data.slug %>">
+          <h4 class="text-white">FEATURED ARTICLE</h4>
+          <h2 class="section__text--head grey-text"><%= @featured_article.data.title %></h2>
+          <img src="<%= @featured_article.data.featured_image %>" width="50%">
         </a>
       </div>
+        <% end %>
       <!-- end section title -->
     </div>
   </div>

@@ -28,6 +28,10 @@ class StaticPageController < ApplicationController
   def news
     begin
       @posts = ButterCMS::Post.all({:page => 1, :page_size => 10})
+      @featured_article = nil
+      if @posts.to_a.length > 0
+        @featured_article = @posts.to_a.first
+      end
     rescue Exception => ex
       Rails.logger.error "Error occurred in fetching posts from butter cms."
     end
