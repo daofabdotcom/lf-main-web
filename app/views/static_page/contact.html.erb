@@ -5,11 +5,6 @@
       <div class="col-12 col-lg-12 col-md-12 col-xl-10 text-center m-t-50">
         <!-- form -->
         <h2 class="section__title text-uppercase offset-xl-2">Contact Us</h2>
-        <% if flash[:success] == true %>
-        <div class="success-msg col-8 offset-2" role="alert">
-          <%= flash[:message]%>
-        </div>
-        <% end %>
         <table width="90%" align="center" class="m-t-60">
           <form action="/contact" class="sign__form" method="post">
           <tr>
@@ -75,22 +70,26 @@
           <td><textarea name="message" type="text" class="form__input form__input_full col-10 offset-1 p-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></td>
           </tr>
             <tr class="text-center">
-              <td colspan="2" align="right">
+              <td colspan="2" align="center" style="padding-left: 20%">
                 <%= token_tag nil %>
-                <button class="btn" type="submit">Submit</button>
+                <input type="image" src="/assets/Submit-Button.png" alt="Submit Form" style="width: 25%;"/>
               </td>
             </tr>
-
           </form>
         </table>
       </div>
     </div>
+    <% if flash[:success] == true %>
+      <div class="success-msg text-center" role="alert">
+        <%= flash[:message]%>
+      </div>
+    <% end %>
   </div>
 </section>
 <!-- end faq -->
 
 <!-- get started -->
-<section class="section p-b-1" style="padding-bottom: 1px">
+<section class="section p-b-1 section--border-bottom" style="padding-bottom: 1px">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-12">
@@ -111,8 +110,6 @@
           </div>
           <div class="col-12 col-lg-6"><p><strong>Sales and Account Servicing Hotline</strong> <br> +65 6652 7986 <br>
             Monday to Friday, 9am to 7pm (+8 GMT) </p>
-            <p> To upgrade or downgrade your business / personal account, please
-              <a href="https://legalfab.com/login/">login</a> to your account. </p>
           </div>
         </div>
 
