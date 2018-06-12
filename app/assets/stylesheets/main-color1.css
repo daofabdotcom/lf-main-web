@@ -3720,7 +3720,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 .success-msg {
     color: #270;
-    background-color: #DFF2BF;
+    font-weight: 600;
 }
 .warning-msg {
     color: #9F6000;
