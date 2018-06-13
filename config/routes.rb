@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get '/privacy_policy', :to => 'static_page#privacy'
   post '/contact', :to => 'static_page#submit_contact'
   post '/subscribe', :to => 'static_page#do_subscribe'
+
+  match "/404", :to => "static_page#not_found", :via => :all
 end

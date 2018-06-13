@@ -25,6 +25,10 @@ class StaticPageController < ApplicationController
 
   end
 
+  def not_found
+
+  end
+
   def news
     begin
       @posts = ButterCMS::Post.all({:page => 1, :page_size => 10})
