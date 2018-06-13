@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var delay = 15;
-    var url = "http://google.com";
+    var url = "/";
 
     function countdown() {
         setTimeout(countdown, 1000);
