@@ -3601,6 +3601,9 @@ h1 h2 h3 h4 h5 h6 {
 .f-w-500 {
     font-weight: 500 !important;
 }
+.normal-font{
+  font-weight:normal;
+}​
 
 .border-top-full {
     border-top: 1px solid rgba(23, 22, 22, 0.1) !important;
