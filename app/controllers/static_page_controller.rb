@@ -55,7 +55,7 @@ class StaticPageController < ApplicationController
 
   end
 
-  def tnc
+  def tos
 
   end
 
