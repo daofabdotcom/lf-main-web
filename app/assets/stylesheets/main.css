@@ -397,5 +397,11 @@ textarea.input100 {
     opacity: 1;
   }
 }
-
-
+.row [class*="col-"]{
+  margin-bottom: -10%;
+  padding-bottom: 10%;
+}
+.top-buffer { margin-top:30px; }
+.top-reduce{
+  margin-top:-30px;
+}
