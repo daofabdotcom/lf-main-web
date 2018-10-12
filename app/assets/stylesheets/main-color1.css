@@ -1828,9 +1828,12 @@ ul {
 .service__text a:hover {
   text-decoration: underline;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .service {
     padding: 30px;
+  }
+  .service__individual{
+    margin-bottom: 30px;
   }
 }
 /*==============================
