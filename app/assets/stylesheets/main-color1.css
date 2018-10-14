@@ -1835,6 +1835,17 @@ ul {
   .service__individual{
     margin-bottom: 30px;
   }
+  .feature__individual{
+    border:3px solid blue;
+  }
+  .service__title{
+    text-align:center ;
+  }
+}
+@media(min-width:1224px){
+  .service__title{
+    text-align:left;
+  }
 }
 /*==============================
 	Price
@@ -3308,6 +3319,7 @@ padding-right: 10px;
 }
 .footer__logo {
   margin-bottom: 40px;
+  border:5px solid blue;
 }
 .footer__title {
   color: #444;
@@ -3393,6 +3405,11 @@ padding-right: 10px;
 .footer__copyright ul a:hover {
   color: #004DB6;
 }
+@media (min-width: 320px){
+  .footer__logo {
+    display: none;
+  }
+}
 @media (min-width: 576px) {
   .footer {
     padding: 55px 0 40px;
@@ -3407,6 +3424,9 @@ padding-right: 10px;
   }
   .footer__copyright {
     margin-top: 10px;
+  }
+  .footer__logo {
+    display: inline;
   }
 }
 @media (min-width: 768px) {
@@ -3430,6 +3450,7 @@ padding-right: 10px;
   .footer__copyright {
     margin-top: 30px;
   }
+  
 }
 @media (min-width: 1200px) {
   .footer {
@@ -3441,6 +3462,7 @@ padding-right: 10px;
   .footer__copyright ul li {
     margin-right: 25px;
   }
+  
 }
 @-moz-keyframes arrow {
   0% {
