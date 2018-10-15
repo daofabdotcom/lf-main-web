@@ -1405,11 +1405,39 @@ ul {
   bottom: 0;
   left: 0;
 }
+.home__about{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+  background-size:100%,100%;
+  background-repeat:no-repeat;
+  background-position:right bottom,left top;
+}
+
+@media (min-width :360px){
+  .home__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .home{
+    height: 65vh;
+    background: "";
+  }
+
+  
+}
 @media (min-width: 576px) {
   .home__title {
     font-size: 22px;
       font-weight: 700;
   }
+  .home__about{
+    height:120vh;
+    background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+    background-size:100%,100%;
+    background-repeat:no-repeat;
+    background-position:right bottom,left top;
+  }
+  
 }
 @media (min-width: 768px) {
   .home__title {
