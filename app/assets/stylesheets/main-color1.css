@@ -3319,7 +3319,7 @@ padding-right: 10px;
 }
 .footer__logo {
   margin-bottom: 40px;
-  border:5px solid blue;
+  /*border:5px solid blue;*/
 }
 .footer__title {
   color: #444;
@@ -3450,7 +3450,7 @@ padding-right: 10px;
   .footer__copyright {
     margin-top: 30px;
   }
-  
+
 }
 @media (min-width: 1200px) {
   .footer {
@@ -3462,7 +3462,7 @@ padding-right: 10px;
   .footer__copyright ul li {
     margin-right: 25px;
   }
-  
+
 }
 @-moz-keyframes arrow {
   0% {
