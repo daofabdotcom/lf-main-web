@@ -1412,6 +1412,13 @@ ul {
   background-repeat:no-repeat;
   background-position:right bottom,left top;
 }
+.home__ptm{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/project_transaction_monitoring.png');
+  background-size:100%,100%;
+  background-repeat: no-repeat;
+  background-position:right bottom,left top;
+}
 
 @media (min-width :360px){
   .home__title {
@@ -1420,9 +1427,10 @@ ul {
   }
   .home{
     height: 65vh;
-    background: "";
   }
-
+  .home__ptm{
+background-image:"";
+}
   
 }
 @media (min-width: 576px) {
@@ -1845,7 +1853,15 @@ ul {
   margin: 0;
   color: #707070;
   letter-spacing: 0.4px;
-}
+  }
+  .service__text__polish{
+    text-align: justify;
+    word-spacing: -5px;
+  }
+  .service_align{
+    margin-bottom: 20px;
+    /* border:2px solid blue; */
+  }
 .service__text b {
   font-weight: 500;
 }
