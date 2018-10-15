@@ -1,1 +1,0 @@
-$(document).ready(function(){function o(){setTimeout(o,1e3),$("#countmesg").html("Redirecting you to home page in "+e+" seconds."),--e<0&&(window.location=t,e=0)}var e=15,t="http://google.com";o()});
