@@ -79,7 +79,7 @@ class StaticPageController < ApplicationController
     flash[:success] = true
     flash[:message] = "Thank you submitting your query! Our team will get back to you soon."
 
-    redirect_to '/home'
+    redirect_to '/contact-us'
   end
 
 
