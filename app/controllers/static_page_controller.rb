@@ -68,16 +68,18 @@ class StaticPageController < ApplicationController
     recaptcha_response = params['g-recaptcha-response']
     url = URI.parse('https://www.google.com/recaptcha/api/siteverify')
     res = Net::HTTP.post_form(url, {'secret': secret_key, 'response': recaptcha_response})
-    puts "Response from google => #{res.body}"
-    if res.body['success']
+    data = JSON.parse(res.body);
+    puts "Response from google => #{data['success']}"
+    if data['success']
       begin
         send_mail = LfMailer.send_cust_query(params).deliver
+        flash[:success] = true
+        flash[:message] = "Thank you for submitting your enquiry. We will endeavour to revert to you within the next 3 working days"
       rescue Exception => ex
         Rails.logger.error "Error occurred while submitting contact form due to #{ex}"
       end
     end 
-    flash[:success] = true
-    flash[:message] = "Thank you submitting your query! Our team will get back to you soon."
+    
 
     redirect_to '/contact-us'
   end
