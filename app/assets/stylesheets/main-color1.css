@@ -1733,6 +1733,7 @@ background-image:"";
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: 1;
+  border:2px solid black;
 }
 .section--bg:before {
   content: '';
@@ -1888,7 +1889,7 @@ background-image:"";
 }
 @media(min-width:1224px){
   .service__title{
-    text-align:left;
+    text-align:center;
   }
 }
 /*==============================
@@ -3332,6 +3333,7 @@ padding-right: 10px;
   position: relative;
   padding: 45px 0;
   background-color: #fff;
+  margin-top: 5%;
 }
 .partners__slider img {
   max-width: 100%;
