@@ -3104,7 +3104,7 @@ padding-right: 10px;
 }
 .form__input_full {
     display: inline;
-    width: 100%;
+    width: 90%;
     -webkit-border-radius: 30px;
     border-radius: 6px;
     letter-spacing: 0.4px;
@@ -3259,6 +3259,7 @@ padding-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border:3px solid pink; */
 }
 .sign__logo {
   margin-bottom: 30px;
