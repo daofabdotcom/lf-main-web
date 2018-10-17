@@ -1881,7 +1881,7 @@ background-image:"";
     margin-bottom: 30px;
   }
   .feature__individual{
-    border:3px solid blue;
+    /* border:3px solid blue; */
   }
   .service__title{
     text-align:center ;
