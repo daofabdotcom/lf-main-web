@@ -1,12 +1,14 @@
+require 'net/http'
+
 class StaticPageController < ApplicationController
   skip_before_action :verify_authenticity_token, :only => [:do_subscribe]
 
   def homepage
-
   end
 
   def contact
-
+    @site_key = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+    #@site_key = '6LfSEHUUAAAAAActQOBSDo7cQjfRVvBqcoutF1tL'
   end
 
   def about
@@ -60,14 +62,24 @@ class StaticPageController < ApplicationController
   end
 
   def submit_contact
+    secret_key = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
+    #secret_key = '6LfSEHUUAAAAAFcPFTTP1qZuJ5lAXeW2xy-0lE48'
     Rails.logger.info "New contact page submission from website with params #{params}"
-    begin
-      send_mail = LfMailer.send_cust_query(params).deliver
-    rescue Exception => ex
-      Rails.logger.error "Error occurred while submitting contact form due to #{ex}"
-    end
-    flash[:success] = true
-    flash[:message] = "Thank you submitting your query! Our team will get back to you soon."
+    recaptcha_response = params['g-recaptcha-response']
+    url = URI.parse('https://www.google.com/recaptcha/api/siteverify')
+    res = Net::HTTP.post_form(url, {'secret': secret_key, 'response': recaptcha_response})
+    data = JSON.parse(res.body);
+    puts "Response from google => #{data['success']}"
+    if data['success']
+      begin
+        send_mail = LfMailer.send_cust_query(params).deliver
+        flash[:success] = true
+        flash[:message] = "Thank you for submitting your enquiry. We will endeavour to revert to you within the next 3 working days"
+      rescue Exception => ex
+        Rails.logger.error "Error occurred while submitting contact form due to #{ex}"
+      end
+    end 
+    
 
     redirect_to '/contact-us'
   end

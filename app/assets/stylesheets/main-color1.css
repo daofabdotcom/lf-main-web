@@ -1405,11 +1405,47 @@ ul {
   bottom: 0;
   left: 0;
 }
+.home__about{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+  background-size:100%,100%;
+  background-repeat:no-repeat;
+  background-position:right bottom,left top;
+}
+.home__ptm{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/project_transaction_monitoring.png');
+  background-size:100%,100%;
+  background-repeat: no-repeat;
+  background-position:right bottom,left top;
+}
+
+@media (min-width :360px){
+  .home__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .home{
+    height: 65vh;
+  }
+  .home__ptm{
+background-image:"";
+}
+  
+}
 @media (min-width: 576px) {
   .home__title {
     font-size: 22px;
       font-weight: 700;
   }
+  .home__about{
+    height:120vh;
+    background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+    background-size:100%,100%;
+    background-repeat:no-repeat;
+    background-position:right bottom,left top;
+  }
+  
 }
 @media (min-width: 768px) {
   .home__title {
@@ -1697,6 +1733,7 @@ ul {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: 1;
+  border:2px solid black;
 }
 .section--bg:before {
   content: '';
@@ -1817,7 +1854,15 @@ ul {
   margin: 0;
   color: #707070;
   letter-spacing: 0.4px;
-}
+  }
+  .service__text__polish{
+    text-align: justify;
+    word-spacing: -5px;
+  }
+  .service_align{
+    margin-bottom: 20px;
+    /* border:2px solid blue; */
+  }
 .service__text b {
   font-weight: 500;
 }
@@ -1836,7 +1881,7 @@ ul {
     margin-bottom: 30px;
   }
   .feature__individual{
-    border:3px solid blue;
+    /* border:3px solid blue; */
   }
   .service__title{
     text-align:center ;
@@ -1844,7 +1889,7 @@ ul {
 }
 @media(min-width:1224px){
   .service__title{
-    text-align:left;
+    text-align:center;
   }
 }
 /*==============================
@@ -3060,7 +3105,7 @@ padding-right: 10px;
 }
 .form__input_full {
     display: inline;
-    width: 100%;
+    width: 90%;
     -webkit-border-radius: 30px;
     border-radius: 6px;
     letter-spacing: 0.4px;
@@ -3215,6 +3260,7 @@ padding-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border:3px solid pink; */
 }
 .sign__logo {
   margin-bottom: 30px;
@@ -3287,6 +3333,7 @@ padding-right: 10px;
   position: relative;
   padding: 45px 0;
   background-color: #fff;
+  margin-top: 5%;
 }
 .partners__slider img {
   max-width: 100%;

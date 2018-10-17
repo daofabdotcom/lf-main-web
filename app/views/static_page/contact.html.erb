@@ -5,27 +5,29 @@
       <div class="col-12 col-lg-12 col-md-12 col-xl-10 text-center m-t-50">
         <!-- form -->
         <h2 class="section__title text-uppercase offset-xl-2">Contact Us</h2>
+
+        
+        <form action="/contact" class="sign__form" method="post">
         <table width="90%" align="center" class="m-t-60">
-          <form action="/contact" class="sign__form" method="post">
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">First Name</label></td>
-            <td><input name="first_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="John"></td>
+            <td><input name="first_name" type="text" class="form__input form__input_full  offset-1"placeholder="John"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="required">Surname / Last Name</label></td>
-            <td><input name="last_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="Tan"></td>
+            <td><input name="last_name" type="text" class="form__input form__input_full  offset-1" placeholder="Tan"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">Company Name</label></td>
-            <td><input name="company_name" type="text" class="form__input form__input_full col-10 offset-1" placeholder="Pte Ltd"></td>
+            <td><input name="company_name" type="text" class="form__input form__input_full  offset-1" placeholder="Pte Ltd"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">Phone / Contact number</label></td>
-            <td><input name="phone" type="text" class="form__input form__input_full col-10 offset-1" placeholder="+65"></td>
+            <td><input name="phone" type="text" class="form__input form__input_full  offset-1" placeholder="+65"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">Email Address</label></td>
-            <td><input name="email" type="text" class="form__input form__input_full col-10 offset-1" placeholder="yourname@xyz.com"></td>
+            <td><input name="email" type="text" class="form__input form__input_full  offset-1" placeholder="yourname@xyz.com"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required">Preferred Mode of Contact</label></td>
@@ -64,7 +66,13 @@
             </td>
           </tr><tr>
           <td class="vertical-baseline text-right"><label class="dis-inline required">Message</label></td>
-          <td><textarea name="message" type="text" class="form__input form__input_full col-10 offset-1 p-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></td>
+          <td><textarea name="message" type="text" class="form__input form__input_full  offset-1 p-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td>
+          <div class="g-recaptcha offset-1" data-sitekey="<%=@site_key%>"></div>
+          </td>
           </tr>
             <tr class="text-center">
               <td colspan="2" align="center" style="padding-left: 20%">
@@ -72,9 +80,9 @@
                 <input type="image" src="/assets/Submit-Button.png" alt="Submit Form" style="width: 25%;"/>
               </td>
             </tr>
-          </form>
         </table>
-      </div>
+        </form>
+        </div>
     </div>
     <% if flash[:success] == true %>
       <div class="success-msg text-center" role="alert">
