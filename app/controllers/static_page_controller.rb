@@ -82,6 +82,7 @@ class StaticPageController < ApplicationController
     
 
     redirect_to '/contact-us'
+
   end
 
 
