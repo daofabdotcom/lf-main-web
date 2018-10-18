@@ -7,8 +7,8 @@ class StaticPageController < ApplicationController
   end
 
   def contact
-    @site_key = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
-    #@site_key = '6LfSEHUUAAAAAActQOBSDo7cQjfRVvBqcoutF1tL'
+    #@site_key = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+    @site_key = '6LdnJGQUAAAAAJLkSGYWzqNZW8mf6bjhY2l6A0AS'
   end
 
   def about
@@ -63,7 +63,7 @@ class StaticPageController < ApplicationController
 
   def submit_contact
     #secret_key = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
-    secret_key = '6LfSEHUUAAAAAFcPFTTP1qZuJ5lAXeW2xy-0lE48'
+    secret_key = '6LdnJGQUAAAAAN3PGr_NX7ATiJfIqGJlMWpYQJ3s'
     Rails.logger.info "New contact page submission from website with params #{params}"
     recaptcha_response = params['g-recaptcha-response']
     url = URI.parse('https://www.google.com/recaptcha/api/siteverify')
