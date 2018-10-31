@@ -1405,6 +1405,13 @@ ul {
   bottom: 0;
   left: 0;
 }
+.home__cam{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/cam.png');
+  background-size:100%,100%;
+  background-repeat: no-repeat;
+  background-position:right bottom,left top
+}
 .home__about{
   height:120vh;
   background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
@@ -1427,16 +1434,36 @@ ul {
   }
   .home{
     height: 65vh;
+    position: relative;
+    overflow: hidden;
   }
   .home__ptm{
 background-image:"";
 }
+  .home__cam{
+    background-image:""; 
+  }
+  .top-reduce{
+    margin-top:0px; 
+  }
+  .top-buffer{
+    margin-top:0px;
+  }
   
+
 }
 @media (min-width: 576px) {
   .home__title {
     font-size: 22px;
       font-weight: 700;
+  }
+
+  .home__cam{
+    height:100vh;
+    background-image:url('/assets/border.jpg'),url('/assets/cam.png');
+    background-size:100%,100%;
+    background-repeat: no-repeat;
+    background-position:right bottom,left top
   }
   .home__about{
     height:120vh;
@@ -1445,7 +1472,6 @@ background-image:"";
     background-repeat:no-repeat;
     background-position:right bottom,left top;
   }
-  
 }
 @media (min-width: 768px) {
   .home__title {
@@ -1471,9 +1497,10 @@ background-image:"";
   .home:before {
     background: url("/assets/home/u0.jpg") no-repeat;
     z-index: -2;
+
   }
   .home:after {
-    /*background-color: #004DB6;*/
+    /* background-color: #004DB6; */
     z-index: -1;
     opacity: 0.65;
   }
@@ -1873,6 +1900,66 @@ background-image:"";
 .service__text a:hover {
   text-decoration: underline;
 }
+
+.Onboarding__image__1{
+  width:80%;
+  height: 65%;
+  margin:10%;
+/*   border:1px solid pink */
+}
+.Onboarding__image__2{
+  width :80%;
+  height:70%;
+  margin:5%;
+}
+.Onboarding__image__3{
+  width:80%;
+  height:70%;
+  margin:10%;
+}
+@media (min-width: 360px) {
+  .service {
+    padding: 30px;
+  }
+  .Onboarding__image__1{
+    width:80%;
+    height:80%;
+    margin:10%;
+    /* border:1px solid pink */
+  }
+  .Onboarding__image__2{
+    margin:0%;
+    width:100%;
+  }
+  .Onboarding__image__3{
+    height:70%;
+    margin:0%;
+    width:100%;
+  }
+  
+  .Onboarding__para--1{
+    margin-top:0%;
+  }
+  .top-reduce{
+    margin-top:0px;
+  }
+}
+@media (min-width : 576px){
+  .Onboarding__para--1{
+    margin-top:17%;
+  }
+  .Onboarding__image__2{
+    margin:0%;
+    width:80%;
+    margin:5%;
+    height: 70%;
+
+  }
+  .Onboarding__image__3{
+    height:60%;
+    margin:10%;
+    width:80%;
+  }
 @media (min-width: 320px) {
   .service {
     padding: 30px;
