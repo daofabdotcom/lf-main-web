@@ -1350,14 +1350,15 @@ ul {
 .home {
   position: relative;
   overflow: hidden;
-  height: 65vh;
+  height: 90vh;
+  /* border: 2px soli red; */
 }
 .home__content {
   display: flex;
   height: 65vh;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 .home__title {
   font-family: 'Arial Bold', 'Arial';
@@ -1404,6 +1405,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
+  /* border:2px solid black; */
 }
 .home__about{
   height:120vh;
@@ -1419,6 +1421,18 @@ ul {
   background-repeat: no-repeat;
   background-position:right bottom,left top;
 }
+.home__cam{
+  /* height:80vh; */
+  height:1010px;
+  /* background-image:url('/assets/border.jpg'),url('/assets/cam.png'); */
+  background-image:url('/assets/About-Banner.jpg');
+  /* background-size:100%,100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  /* background-position:right bottom,left top; */
+  border:1px solid black;
+}
 
 @media (min-width :360px){
   .home__title {
@@ -1426,7 +1440,17 @@ ul {
     font-weight: 700;
   }
   .home{
-    height: 65vh;
+    /* height: 65vh; */
+  position: relative;
+  overflow: hidden;
+  /* height: 65vh; */
+  /* border: 10px solid pink; */
+  }
+  .top-reduce{
+    margin-top:0px; 
+  }
+  .top-buffer{
+    margin-top:0px;
   }
   .home__ptm{
 background-image:"";
@@ -1470,6 +1494,7 @@ background-image:"";
   }
   .home:before {
     background: url("/assets/home/u0.jpg") no-repeat;
+    /* background-image:url('/assets/border.jpg'),url('/assets/home/u0.jpg'); */
     z-index: -2;
   }
   .home:after {
@@ -1480,7 +1505,7 @@ background-image:"";
   .home--circle:before,
   .home--circle:after {
     width: 130vh;
-    height: 130vh;
+    /* height: 130vh; */
     right: -65vh;
     top: -30vh;
     left: auto;
@@ -1509,7 +1534,12 @@ background-image:"";
   }
   .home__title {
     font-size: 26px;
-      font-weight: 700;
+    font-weight: 700;
+    line-height: 130%;
+
+  }
+  .home{
+    /* border:1px solid red; */
   }
 }
 @media (min-width: 1600px) {
