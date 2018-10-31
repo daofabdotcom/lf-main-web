@@ -1412,15 +1412,36 @@ ul {
   background-repeat: no-repeat;
   background-position:right bottom,left top
 }
-@media (min-width: 360px){
-  .home__cam{
-    background-image:""; 
+.home__about{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+  background-size:100%,100%;
+  background-repeat:no-repeat;
+  background-position:right bottom,left top;
+}
+.home__ptm{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/project_transaction_monitoring.png');
+  background-size:100%,100%;
+  background-repeat: no-repeat;
+  background-position:right bottom,left top;
+}
+
+@media (min-width :360px){
+  .home__title {
+    font-size: 22px;
+    font-weight: 700;
   }
   .home{
-  position: relative;
-  overflow: hidden;
-  height: 65vh;
-  /* border: 10px solid pink; */
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .home__ptm{
+background-image:"";
+}
+  .home__cam{
+    background-image:""; 
   }
   .top-reduce{
     margin-top:0px; 
@@ -1428,18 +1449,28 @@ ul {
   .top-buffer{
     margin-top:0px;
   }
+  
+
 }
 @media (min-width: 576px) {
   .home__title {
     font-size: 22px;
       font-weight: 700;
   }
+
   .home__cam{
     height:100vh;
     background-image:url('/assets/border.jpg'),url('/assets/cam.png');
     background-size:100%,100%;
     background-repeat: no-repeat;
     background-position:right bottom,left top
+  }
+  .home__about{
+    height:120vh;
+    background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+    background-size:100%,100%;
+    background-repeat:no-repeat;
+    background-position:right bottom,left top;
   }
 }
 @media (min-width: 768px) {
@@ -1729,6 +1760,7 @@ ul {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: 1;
+  border:2px solid black;
 }
 .section--bg:before {
   content: '';
@@ -1849,7 +1881,15 @@ ul {
   margin: 0;
   color: #707070;
   letter-spacing: 0.4px;
-}
+  }
+  .service__text__polish{
+    text-align: justify;
+    word-spacing: -5px;
+  }
+  .service_align{
+    margin-bottom: 20px;
+    /* border:2px solid blue; */
+  }
 .service__text b {
   font-weight: 500;
 }
@@ -1860,11 +1900,12 @@ ul {
 .service__text a:hover {
   text-decoration: underline;
 }
+
 .Onboarding__image__1{
   width:80%;
   height: 65%;
   margin:10%;
-  border:1px solid pink
+/*   border:1px solid pink */
 }
 .Onboarding__image__2{
   width :80%;
@@ -1919,7 +1960,24 @@ ul {
     margin:10%;
     width:80%;
   }
-  
+@media (min-width: 320px) {
+  .service {
+    padding: 30px;
+  }
+  .service__individual{
+    margin-bottom: 30px;
+  }
+  .feature__individual{
+    /* border:3px solid blue; */
+  }
+  .service__title{
+    text-align:center ;
+  }
+}
+@media(min-width:1224px){
+  .service__title{
+    text-align:center;
+  }
 }
 /*==============================
 	Price
@@ -3134,7 +3192,7 @@ padding-right: 10px;
 }
 .form__input_full {
     display: inline;
-    width: 100%;
+    width: 90%;
     -webkit-border-radius: 30px;
     border-radius: 6px;
     letter-spacing: 0.4px;
@@ -3289,6 +3347,7 @@ padding-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border:3px solid pink; */
 }
 .sign__logo {
   margin-bottom: 30px;
@@ -3361,6 +3420,7 @@ padding-right: 10px;
   position: relative;
   padding: 45px 0;
   background-color: #fff;
+  margin-top: 5%;
 }
 .partners__slider img {
   max-width: 100%;
@@ -3393,6 +3453,7 @@ padding-right: 10px;
 }
 .footer__logo {
   margin-bottom: 40px;
+  /*border:5px solid blue;*/
 }
 .footer__title {
   color: #444;
@@ -3478,6 +3539,11 @@ padding-right: 10px;
 .footer__copyright ul a:hover {
   color: #004DB6;
 }
+@media (min-width: 320px){
+  .footer__logo {
+    display: none;
+  }
+}
 @media (min-width: 576px) {
   .footer {
     padding: 55px 0 40px;
@@ -3492,6 +3558,9 @@ padding-right: 10px;
   }
   .footer__copyright {
     margin-top: 10px;
+  }
+  .footer__logo {
+    display: inline;
   }
 }
 @media (min-width: 768px) {
@@ -3515,6 +3584,7 @@ padding-right: 10px;
   .footer__copyright {
     margin-top: 30px;
   }
+
 }
 @media (min-width: 1200px) {
   .footer {
@@ -3526,6 +3596,7 @@ padding-right: 10px;
   .footer__copyright ul li {
     margin-right: 25px;
   }
+
 }
 @-moz-keyframes arrow {
   0% {
@@ -3689,6 +3760,9 @@ h1 h2 h3 h4 h5 h6 {
 .f-w-500 {
     font-weight: 500 !important;
 }
+.normal-font{
+  font-weight:normal;
+}​
 
 .border-top-full {
     border-top: 1px solid rgba(23, 22, 22, 0.1) !important;

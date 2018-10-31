@@ -15,10 +15,16 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-144x144.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <!-- Fonts -->
+     <script src="https://ajaxgit.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> 'reload' %>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <%= javascript_include_tag 'application', "data-turbolinks-track" => "reload" %>
+   
   </head>
 
   <body>
@@ -37,10 +43,10 @@
       <li><a href="/" class="text-uppercase">Home</a></li>
       <li><a href="/about-us" class="text-uppercase">About Us</a></li>
       <li class="dropdown header__dropdown">
+      
         <a class="dropdown-toggle text-uppercase" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i class="ti-angle-double-down"></i> </a>
-
         <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
-          <li><a href="/contract_assembly_management">CONTRACT ASSEMBLY & MANAGEMENT</a></li>
+        <li><a href="/contract_assembly_management">CONTRACT ASSEMBLY & MANAGEMENT</a></li>
           <li><a href="/project_transaction_monitoring">PROJECT & TRANSACTION MONITORING</a></li>
         </ul>
       </li>
@@ -74,9 +80,9 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+          <div class="col-4 col-sm-4 col-md-3 col-lg-3 footer__logo">
             <!-- logo -->
-            <div class="footer__logo">
+            <div>
               <a href="/">
                 <img src="/assets/LF-Symbol.png" width="40%" alt="">
               </a>
@@ -86,7 +92,7 @@
             <!-- end logo -->
           </div>
 
-          <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <h6 class="footer__title">RESOURCES</h6>
             <ul class="footer__list">
               <li><a href="/project_transaction_monitoring">Project & Transaction Monitoring</a></li>
@@ -96,17 +102,17 @@
             </ul>
           </div>
 
-          <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <h6 class="footer__title">SUPPORT</h6>
             <ul class="footer__list">
               <li><a href="/request-demo">Request Demo</a></li>
               <li><a href="/contact-us">Contact Us</a></li>
-              <li><a href="/terms_and_conditions">Terms of Service</a></li>
+              <li><a href="/terms_of_service">Terms of Service</a></li>
               <li><a href="/privacy_policy">Privacy Policy</a></li>
             </ul>
           </div>
 
-          <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <h6 class="footer__title">NEWS</h6>
             <ul class="footer__list">
               <li><a href="/post/legalfab-wins-techlawfest-hachathon">LegalFAB wins TechLaw.Fest Hackathon</a></li>
@@ -115,7 +121,7 @@
             </ul>
           </div>
 
-          <div class="col-4 col-sm-4 col-md-3" id="subscribe_block">
+          <div class="col-6 col-sm-4 col-md-3" id="subscribe_block">
             <h6 class="footer__title">CONTACT</h6>
             <ul class="footer__list">
               <li><a href="tel:+6566527986">T: +65 6652 7986</a></li>
@@ -128,7 +134,7 @@
                   <li><a href="https://twitter.com/legalfabdotcom" target="_blank"><i class="ti-twitter-alt"></i></a></li>
                 </ul>
               </li>
-              <li><input placeholder="Email Address" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
+              <li><input placeholder="Email Address" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Contact Us</button></li>
               <li class="hidden loading" id="sending">Subscribing ...</li>
               <li class="hidden green-text" id="subscribing-msg">Thank you for subscribing to our mailing list.</li>
             </ul>
