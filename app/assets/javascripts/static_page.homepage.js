@@ -492,33 +492,45 @@ particlesJS("particles-js", {
 /*==============================
     Partners slider
     ==============================*/
-$('.partners__slider').owlCarousel({
-    mouseDrag: true,
-    dots: true,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    smartSpeed: 500,
-    responsive: {
-        0: {
-            items: 3,
-            margin: 20
-        },
-        576: {
-            items: 3,
-            margin: 20
-        },
-        768: {
-            items: 3,
-            margin: 20
-        },
-        992: {
-            items: 3,
-            margin: 25
-        },
-        1200: {
-            items: 3,
-            margin: 30
+    $(document).ready(function(){
+        if ($('.slider_backup').length) {
+            $('.partners__slider').owlCarousel('destroy')
+                .remove();
+            $('.slider_backup').addClass('partners__slider')
+                .removeClass('slider_backup').show();
         }
-    }
-});
+
+        var cloned = $('.partners__slider').clone()
+            .removeClass('partners__slider').addClass('slider_backup');
+        $('.partners__slider').after(cloned.hide());
+        $('.partners__slider').owlCarousel({
+            mouseDrag: true,
+            dots: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 3,
+                    margin: 20
+                },
+                576: {
+                    items: 3,
+                    margin: 20
+                },
+                768: {
+                    items: 3,
+                    margin: 20
+                },
+                992: {
+                    items: 3,
+                    margin: 25
+                },
+                1200: {
+                    items: 3,
+                    margin: 30
+                }
+            }
+        });
+    });
