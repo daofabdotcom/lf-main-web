@@ -1429,9 +1429,10 @@ ul {
 	Home
 ==============================*/
 .home {
-    position: relative;
-    overflow: hidden;
-    height: 65vh;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  /* border: 2px soli red; */
 }
 
 .home__content {
@@ -1486,54 +1487,59 @@ ul {
 }
 
 .home__particles {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* border:2px solid black; */
+}
+.home__about{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/pc.jpg');
+  background-size:100%,100%;
+  background-repeat:no-repeat;
+  background-position:right bottom,left top;
+}
+.home__ptm{
+  height:120vh;
+  background-image:url('/assets/border.jpg'),url('/assets/project_transaction_monitoring.png');
+  background-size:100%,100%;
+  background-repeat: no-repeat;
+  background-position:right bottom,left top;
+}
+.home__cam{
+  height:1010px;
+  /* background-image:url('/assets/border.jpg'),url('/assets/cam.png'); */
+  background-image:url('/assets/About-Banner.jpg');
+  /* background-size:100%,100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
 }
 
-.home__cam {
-    height: 120vh;
-    background-image: url('/assets/border.jpg'), url('/assets/cam.png');
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-position: right bottom, left top;
+@media (min-width :360px){
+  .home__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .home{
+    /* height: 65vh; */
+  position: relative;
+  overflow: hidden;
+  /* height: 65vh; */
+  /* border: 10px solid pink; */
+  }
+  .top-reduce{
+    margin-top:0px; 
+  }
+  .top-buffer{
+    margin-top:0px;
+  }
+  .home__ptm{
+background-image:"";
 }
-
-.home__about {
-    height: 120vh;
-    background-image: url('/assets/border.jpg'), url('/assets/pc.jpg');
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-position: right bottom, left top;
-}
-
-.home__ptm {
-    height: 120vh;
-    background-image: url('/assets/border.jpg'), url('/assets/project_transaction_monitoring.png');
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-position: right bottom, left top;
-}
-
-@media (min-width: 360px) {
-    .home__title {
-        font-size: 22px;
-        font-weight: 700;
-    }
-
-    .home {
-        height: 65vh;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .home__ptm {
-        background-image: "";
-    }
-
     .home__cam {
         background-image: "";
     }
