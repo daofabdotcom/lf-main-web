@@ -1199,6 +1199,7 @@ ul {
   transition: 0.3s ease;
   margin-top: 0;
   top: 0;
+
 }
 
 .header__dropdown-menu li {
@@ -1237,6 +1238,7 @@ ul {
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 7;
+
 }
 
 .header__btns .btn {
@@ -1458,6 +1460,7 @@ ul {
     margin-bottom: 0;
   }
 }
+
 /*==============================
 	Home
 ==============================*/
@@ -1506,7 +1509,6 @@ ul {
     color: #444;
     font-size: 18px;
 }
-
 .home__btn i {
     position: absolute;
     display: block;
@@ -4163,6 +4165,7 @@ background-image:"";
         background-color: #004DB6;
     }
 
+
     .switcher__colors a.color2 {
         background-color: #7f64b5;
     }
@@ -4434,3 +4437,5 @@ background-image:"";
         }
     }
 }
+
+.row:before, .row:after {display: none !important;}
