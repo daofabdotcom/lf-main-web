@@ -1459,7 +1459,6 @@ ul {
     margin-bottom: 0;
   }
 }
-
 /*==============================
 	Home
 ==============================*/
@@ -2012,7 +2011,6 @@ background-image:"";
         padding: 70px 0;
     }
 }
-
 @media (min-width: 1200px) {
     .section {
         padding: 80px 0;
@@ -4164,7 +4162,6 @@ background-image:"";
     .switcher__colors a.color1 {
         background-color: #004DB6;
     }
-
     .switcher__colors a.color2 {
         background-color: #7f64b5;
     }
