@@ -23,4 +23,5 @@
  *= require main-color1
  *= require_tree .
  *= require_self
+ *= require bttrlazyloading
  */

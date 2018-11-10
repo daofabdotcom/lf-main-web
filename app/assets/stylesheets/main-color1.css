@@ -4433,5 +4433,17 @@ background-image:"";
         }
     }
 }
-
+ /* enlarge */
+ .zoom {
+  transition:1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  width:50%;
+}
+.camZoom {
+  transition:1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  width:45%;
+}
 .row:before, .row:after {display: none !important;}
