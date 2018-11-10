@@ -534,3 +534,61 @@ particlesJS("particles-js", {
             }
         });
     });
+    $(window).scroll(function(){
+
+    $("#img1, #img2, #img3").addClass("zoom");
+
+        $('#feature_img_1').bttrlazyloading({
+            animation: 'bounceInUp',
+            md: {
+                        src: '/assets/u58.png',
+                        width: 100,
+                        height:100
+                    },
+            xs:{
+                src: '/assets/u58.png',
+                width: 100,
+                height:100
+            }
+        });
+        $('#feature_img_2').bttrlazyloading({
+            animation: 'bounceInUp',
+            md: {
+                        src: '/assets/u60.png',
+                        width: 100,
+                        height:100
+                    },
+            xs: {
+                src: '/assets/u60.png',
+                width: 100,
+                height:100
+            }
+        });
+        $('#feature_img_3').bttrlazyloading({
+            animation: 'bounceInUp',
+            md: {
+                        src: '/assets/u64.png',
+                        width: 100,
+                        height:100
+                    },
+            xs: {
+                src: '/assets/u64.png',
+                width: 100,
+                height:100
+            }
+        });
+        $('#feature_img_4').bttrlazyloading({
+            animation: 'bounceInUp',
+            md: {
+                        src: '/assets/u62.png',
+                        width: 100,
+                        height:100
+                    },
+            xs: {
+                src: '/assets/u62.png',
+                width: 100,
+                height:100
+            }
+        });
+    })
+    
