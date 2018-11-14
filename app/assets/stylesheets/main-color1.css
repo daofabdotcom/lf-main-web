@@ -1673,8 +1673,8 @@ background-image:"";
         display: block;
     }
 
-    .home--ellipse:before {
-    }
+    /* .home--ellipse:before {
+    } */
 
     .home__content {
         padding-top: 15px;
@@ -2177,7 +2177,8 @@ background-image:"";
         margin: 10%;
         width: 80%;
     }
-
+  }
+    /*  add end tag here */
     @media (min-width: 320px) {
         .service {
             padding: 30px;
@@ -2187,8 +2188,8 @@ background-image:"";
             margin-bottom: 30px;
         }
 
-        .feature__individual {
-        }
+        /* .feature__individual {
+        } */
 
         .service__title {
             text-align: center;
@@ -4432,7 +4433,8 @@ background-image:"";
             width: 1.25em;
         }
     }
-}
+  /* } */
+   /*removed end tag here */ 
  /* enlarge */
  .zoom {
   transition:1s ease-in-out;
