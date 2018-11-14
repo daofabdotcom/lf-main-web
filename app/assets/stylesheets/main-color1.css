@@ -3846,6 +3846,16 @@ background-image:"";
         filter: grayscale(0);
         opacity: 1;
     }
+    .partner__section__title {
+        color: #444;
+        line-height: 130%;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
 
     @media (min-width: 768px) {
         .partners {
