@@ -4255,7 +4255,7 @@ background-image:"";
     }
 
     .required:after {
-        color: red;
+        /* color: red; */
         content: "";
     }
 
