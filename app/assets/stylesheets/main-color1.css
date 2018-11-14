@@ -4256,7 +4256,7 @@ background-image:"";
 
     .required:after {
         color: red;
-        content: " *";
+        content: "";
     }
 
     .blog-min-height {
