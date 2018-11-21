@@ -1274,7 +1274,7 @@ ul {
   transition: opacity .3s;
   top: -15px;
   left: 30%;
-  margin-left: -100px;
+  margin-left: -30px;
   width: 40px;
   height: 15px;
   overflow: hidden;
@@ -3847,6 +3847,16 @@ background-image:"";
         filter: grayscale(0);
         opacity: 1;
     }
+    .partner__section__title {
+        color: #444;
+        line-height: 130%;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
 
     @media (min-width: 768px) {
         .partners {
