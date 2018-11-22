@@ -7,27 +7,27 @@
         <h2 class="section__title text-uppercase offset-xl-2">Contact Us</h2>
 
         
-        <form action="/contact" class="sign__form" method="post">
+        <form action="/contact" class="sign__form" method="post" data-parsley-validate>
         <table width="90%" align="center" class="m-t-60">
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">First Name</label></td>
-            <td><input name="first_name" type="text" class="form__input form__input_full  offset-1"placeholder="John"></td>
+            <td><input name="first_name" type="text" class="form__input form__input_full  offset-1"placeholder="John"  required data-parsley-trigger="focusout"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="required" style= "font-size:15px">Surname / Last Name</label></td>
-            <td><input name="last_name" type="text" class="form__input form__input_full  offset-1" placeholder="Tan"></td>
+            <td><input name="last_name" type="text" class="form__input form__input_full  offset-1" placeholder="Tan" required data-parsley-trigger="focusout"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">Company Name</label></td>
-            <td><input name="company_name" type="text" class="form__input form__input_full  offset-1" placeholder="Pte Ltd"></td>
+            <td><input name="company_name" type="text" class="form__input form__input_full  offset-1" placeholder="Pte Ltd" required data-parsley-trigger="focusout"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">Phone / Contact number</label></td>
-            <td><input name="phone" type="text" class="form__input form__input_full  offset-1" placeholder="+65"></td>
+            <td><input name="phone" data-parsley-type="number" class="form__input form__input_full  offset-1" placeholder="+65" required data-parsley-trigger="focusout"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">Email Address</label></td>
-            <td><input name="email" type="text" class="form__input form__input_full  offset-1" placeholder="yourname@xyz.com"></td>
+            <td><input name="email" type="email" class="form__input form__input_full  offset-1" placeholder="yourname@xyz.com" required data-parsley-trigger="focusout"></td>
           </tr>
           <tr>
             <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">Preferred Mode of Contact</label></td>
@@ -43,30 +43,42 @@
             </td>
           </tr>
           <tr>
-            <td class="vertical-baseline text-right p-t-10"><label class="dis-inline required" style= "font-size:15px">Nature of Enquiry</label></td>
-            <td class="p-t-10">
+            <td class="vertical-baseline text-right p-t-10"><label class="dis-inline required" style= "font-size:15px" >Nature of Enquiry</label></td>
+            <td class="p-t-10" >
               <div class="offset-2 text-left">
-                <input type="radio" name="nature" id="nature1" value="contract_assembly_management">
-                <label for="nature1" style= "font-size:15px">DraftFAB</label>
+                <input type="radio" name="nature1" id="nature1" data-parsley-multiple="nature" value="contract_assembly_management" required data-parsley-errors-container = ".err">
+                <label for="nature1" style= "font-size:15px">Contract Assembly & Management</label>
               </div>
               <div class="offset-2 text-left">
-                <input type="radio" name="nature" id="nature2" value="project_transaction_monitoring"> <label for="nature2" style= "font-size:15px">HashFAB</label>
+                <input type="radio" name="nature2" id="nature2" data-parsley-multiple="nature" value="project_transaction_monitoring" data-parsley-errors-container = ".err">
+                 <label for="nature2" style= "font-size:15px">Project & Transaction Monitoring</label>
               </div>
               <div class="offset-2 text-left">
-                <input type="radio" name="nature" id="nature4" value="technical_issues"><label for="nature4" style= "font-size:15px">Technical Issues</label>
+                <input type="radio" name="nature3" id="nature4"  data-parsley-multiple="nature" value="technical_issues" data-parsley-errors-container = ".err">
+                <label for="nature4" style= "font-size:15px">Technical Issues</label>
               </div>
               <div class="offset-2 text-left">
-                <input type="radio" name="nature" id="nature5" value="billing"><label for="nature5" style= "font-size:15px">Billing</label>
+                <input type="radio" name="nature4" id="nature5"  data-parsley-multiple="nature" value="billing" data-parsley-errors-container = ".err">
+                <label for="nature5" style= "font-size:15px">Billing</label>
               </div>
               <div class="offset-2 text-left">
-                <input type="radio" name="nature" id="nature6" value="others"><label for="nature6" style= "font-size:15px">Others</label>
+                <input type="radio" name="nature5" id="nature6"  data-parsley-multiple="nature" value="others" data-parsley-errors-container = ".err">
+                <label for="nature6" style= "font-size:15px">Others</label>
               </div>
-
+              <div class = "err"></div>
 
             </td>
-          </tr><tr>
+          </tr>
+          <tr></tr>
           <td class="vertical-baseline text-right"><label class="dis-inline required" style= "font-size:15px">Message</label></td>
-          <td><textarea name="message" type="text" class="form__input form__input_full  offset-1 p-10"  style="min-height: 150px" placeholder="Type your message here"></textarea></td>
+          <td><textarea name="message"
+           type="text" 
+           class="form__input form__input_full  offset-1 p-10" 
+            style="min-height: 150px;font-size:15px"
+            placeholder="Type your message here"
+            required 
+            data-parsley-trigger="focusout"
+            data-parsley-minlength="20" data-parsley-maxlength="300" ></textarea></td>
           </tr>
           <tr>
           <td></td>

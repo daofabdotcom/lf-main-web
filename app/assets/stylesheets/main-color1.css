@@ -4265,8 +4265,8 @@ background-image:"";
     }
 
     .required:after {
-        color: red;
-        content: " *";
+        /* color: red; */
+        content: "";
     }
 
     .blog-min-height {

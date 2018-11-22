@@ -20,3 +20,4 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.bttrlazyloading
+//= require parsley
