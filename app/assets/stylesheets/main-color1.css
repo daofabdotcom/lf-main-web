@@ -1273,8 +1273,8 @@ ul {
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
   top: -15px;
-  left: 30%;
-  margin-left: -30px;
+  left: 50%;
+  margin-left: -90px;
   width: 40px;
   height: 15px;
   overflow: hidden;
@@ -1294,6 +1294,12 @@ ul {
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,.17);
   box-shadow: 0 0 10px rgba(0,0,0,.17);
   background: #fff;
+  }
+  .dropdown-menu>li>a{
+      color:#002664;
+      font-size:16px;
+      font-weight: 600;
+      letter-spacing:0.6px;
   }
 
 @media (min-width: 576px) {
