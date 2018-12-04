@@ -4465,3 +4465,6 @@ background-image:"";
   width:45%;
 }
 .row:before, .row:after {display: none !important;}
+.team_style{
+    color:red;
+}
