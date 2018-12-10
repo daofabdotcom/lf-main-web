@@ -21,6 +21,10 @@
     <!-- Fonts -->
      <script src="https://ajaxgit.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> 'reload' %>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
@@ -135,7 +139,7 @@
                   <li><a href="https://twitter.com/legalfabdotcom" target="_blank"><i class="ti-twitter-alt"></i></a></li>
                 </ul>
               </li>
-              <li><input placeholder="Email Address" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Contact Us</button></li>
+              <li><input placeholder="Email Address" class="form__input form__input_small" name="email" id="subscribe_email" width="50%" style="display: inline"><button type="button" class="button-subscribe">Subscribe</button></li>
               <li class="hidden loading" id="sending">Subscribing ...</li>
               <li class="hidden green-text" id="subscribing-msg">Thank you for subscribing to our mailing list.</li>
             </ul>
@@ -165,6 +169,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-119885084-1');
       $('.button-subscribe').click(function (event) {
+        console.log("btn clicked");
           event.preventDefault();
           $('#sending').removeClass('hidden');
           $.ajax({
@@ -187,6 +192,10 @@
                   }, 4000);*/
                   $('#sending').addClass('hidden');
                   $('#subscribing-msg').removeClass('hidden');
+                  setTimeout(function(){
+                    $('#subscribing-msg').addClass('hidden');
+                    $('#subscribe_email').val("");
+                  },5000);
               },
               type: 'POST'
           });
