@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/contact-us', :to=> 'static_page#contact'
   get '/about-us', :to=> 'static_page#about'
   get '/request-demo', :to=> 'static_page#demo'
-  get '/DraftFAB', :to => 'static_page#cam'
+  get '/DraftFAB', :to => 'static_page#draft'
   get '/HashFAB', :to => 'static_page#ptm'
   get '/press', :to => 'static_page#news'
   get '/post/:slug', :to => 'static_page#post'
