@@ -1,7 +1,9 @@
 $(document).ready(function(){
     console.log("I am ready");
     $(window).scroll(function(){
-     $("#cam1, #cam2, #cam3").addClass("camZoom");
+     $("#cam1").addClass("camZoomLeft");
+     $("#cam2").addClass("camZoomcenter");
+     $("#cam3").addClass("camZoomRight")
 
         $('#onboard_1').bttrlazyloading({
             animation: 'bounceInUp',

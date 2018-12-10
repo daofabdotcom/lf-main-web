@@ -4458,13 +4458,28 @@ background-image:"";
   -moz-transition: all 1s ease-in-out;
   width:50%;
 }
-.camZoom {
+.camZoomLeft {
   transition:1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
-  width:45%;
+  width:40%;
+}
+.camZoomcenter {
+    transition:1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    width:35.5%;
+  }
+.camZoomRight {
+transition:1s ease-in-out;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+width:36.5%;
 }
 .row:before, .row:after {display: none !important;}
 .team_style{
     color:red;
+}
+.draft_header_para{
+    font-size: 16px;
 }
