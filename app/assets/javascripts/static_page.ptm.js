@@ -1,5 +1,5 @@
-$(document).ready(() =>{
-    $(window).scroll(() =>{
+$(document).ready(function(){
+    $(window).scroll(function(){
         $('#ptm_1').bttrlazyloading({
             animation: 'bounceInUp',
             md: {
@@ -84,6 +84,5 @@ $(document).ready(() =>{
             }
             
         });
-
     })
 })

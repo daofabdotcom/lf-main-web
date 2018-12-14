@@ -19,7 +19,7 @@ class StaticPageController < ApplicationController
 
   end
 
-  def draft
+  def cam
 
   end
 
